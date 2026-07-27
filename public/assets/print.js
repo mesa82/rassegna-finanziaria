@@ -1,7 +1,11 @@
 
 const esc=(v='')=>String(v).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[c]));
 const cls=d=>d==='down'?'down':d==='up'?'up':'neutral';
-const links=arr=>(arr||[]).map(s=>`<a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.name)}</a>`).join(' · ');
+const links=arr=>(arr||[]).map(s=>{
+  const external=String(s.url||'').startsWith('http');
+  return `<a href="${esc(s.url||'#')}" ${external?'target="_blank" rel="noopener"':''}>${esc(s.name)}</a>`;
+}).join(' · ');
+const printSources=arr=>(arr&&arr.length)?`<div class="sources">Fonte: ${links(arr)}</div>`:'';
 const lis=arr=>(arr||[]).map(x=>`<li>${esc(x)}</li>`).join('');
 
 async function loadEdition(){
@@ -24,7 +28,7 @@ function render(d){
     <div>
       <div class="kicker">Daily Market Intelligence</div>
       <h1>Rassegna Finanziaria</h1>
-      <div class="meta">${esc(m.date_label)} · ${esc(m.session)} · aggiornato ${esc(m.updated_at)}</div>
+      <div class="meta">${esc(m.date_label)} · ${esc(m.session)} · aggiornato ${esc(m.updated_at)}</div>${printSources(m.sources)}
     </div>
     <div class="edition"><span>EDIZIONE</span><strong>${esc(m.edition)}</strong><span>${esc(m.region)}</span></div>
   </header>
@@ -36,7 +40,7 @@ function render(d){
         <div class="kicker">Regime prevalente</div>
         <h3>${esc(r.label)}</h3>
         <p>${esc(r.summary)}</p>
-        <div class="confirmations">${(r.confirmations||[]).map(x=>`<span>${esc(x)}</span>`).join('')}</div>
+        <div class="confirmations">${(r.confirmations||[]).map(x=>`<span>${esc(x)}</span>`).join('')}</div>${printSources(r.sources)}
       </div>
       <div class="verdict">
         <div class="kicker" style="color:#76d9cf">Verdetto operativo</div>
@@ -45,7 +49,7 @@ function render(d){
         <div class="risk"><span>Rischio</span><strong>${esc(r.risk)}</strong></div>
       </div>
     </div>
-    <div class="tiles">${(d.market_tiles||[]).map(x=>`<div class="tile"><div class="label">${esc(x.label)}</div><div class="value ${cls(x.direction)}">${esc(x.value)}</div></div>`).join('')}</div>
+    <div class="tiles">${(d.market_tiles||[]).map(x=>`<div class="tile"><div class="label">${esc(x.label)}</div><div class="value ${cls(x.direction)}">${esc(x.value)}</div>${printSources(x.sources)}</div>`).join('')}</div>
   </section>
 
   <section class="print-section page-break">
@@ -56,42 +60,42 @@ function render(d){
   <section class="print-section page-break">
     <div class="section-title"><span class="num">03</span><h2>Macro &amp; Rates</h2></div>
     <div class="macro-grid">
-      <div class="lead-stat"><div class="kicker" style="color:#8fd4ff">${esc(d.macro_rates.lead_label)}</div><div class="value">${esc(d.macro_rates.lead_value)}</div><div style="font-size:7pt">${esc(d.macro_rates.lead_delta)}</div></div>
+      <div class="lead-stat"><div class="kicker" style="color:#8fd4ff">${esc(d.macro_rates.lead_label)}</div><div class="value">${esc(d.macro_rates.lead_value)}</div><div style="font-size:7pt">${esc(d.macro_rates.lead_delta)}</div>${printSources(d.macro_rates.lead_sources || d.macro_rates.sources)}</div>
       <div class="macro-card">
         <h3>${esc(d.macro_rates.headline)}</h3>
         <p>${esc(d.macro_rates.summary)}</p>
-        <div class="metrics">${(d.macro_rates.metrics||[]).map(x=>`<div class="metric"><span>${esc(x.label)}</span><strong>${esc(x.value)}</strong></div>`).join('')}</div>
+        <div class="metrics">${(d.macro_rates.metrics||[]).map(x=>`<div class="metric"><span>${esc(x.label)}${printSources(x.sources)}</span><strong>${esc(x.value)}</strong></div>`).join('')}</div>
         <div class="sources">${links(d.macro_rates.sources)}</div>
       </div>
     </div>
     <h3 style="font:400 13pt Georgia,serif;margin:5mm 0 2mm">Prossimi catalyst</h3>
-    <ul class="catalysts">${(d.catalysts||[]).map(x=>`<li><strong>${esc(x.date)}</strong><span><b>${esc(x.title)}</b><br>${esc(x.summary)}</span></li>`).join('')}</ul>
+    <ul class="catalysts">${(d.catalysts||[]).map(x=>`<li><strong>${esc(x.date)}</strong><span><b>${esc(x.title)}</b><br>${esc(x.summary)}${printSources(x.sources)}</span></li>`).join('')}</ul>
   </section>
 
   <section class="print-section page-break">
     <div class="section-title"><span class="num">04</span><h2>Intermarket Dashboard</h2></div>
-    <div class="summary-strip"><div><div class="label">USA · INDICI CASH</div><p>${esc(d.indices_summary.us)}</p></div><div><div class="label">EUROPA · CHIUSURA CASH</div><p>${esc(d.indices_summary.europe)}</p></div></div>
+    <div class="summary-strip"><div><div class="label">USA · INDICI CASH</div><p>${esc(d.indices_summary.us)}</p>${printSources(d.indices_summary.us_sources)}</div><div><div class="label">EUROPA · CHIUSURA CASH</div><p>${esc(d.indices_summary.europe)}</p>${printSources(d.indices_summary.europe_sources)}</div></div>
     <table>
       <thead><tr><th>Indice</th><th>Livello / stato</th><th>Variazione</th></tr></thead>
-      <tbody>${(d.indices||[]).map(x=>`<tr><td>${esc(x.name)}</td><td>${esc(x.level)}</td><td class="${cls(x.direction)}">${esc(x.change)}</td></tr>`).join('')}</tbody>
+      <tbody>${(d.indices||[]).map(x=>`<tr><td>${esc(x.name)}${printSources(x.sources)}</td><td>${esc(x.level)}</td><td class="${cls(x.direction)}">${esc(x.change)}</td></tr>`).join('')}</tbody>
     </table>
     <table>
       <thead><tr><th>Strumento</th><th>Valore</th><th>Variazione</th><th>Lettura</th></tr></thead>
-      <tbody>${(d.intermarket||[]).map(x=>`<tr><td>${esc(x.name)}</td><td>${esc(x.value)}</td><td class="${cls(x.direction)}">${esc(x.change)}</td><td>${esc(x.description)}</td></tr>`).join('')}</tbody>
+      <tbody>${(d.intermarket||[]).map(x=>`<tr><td>${esc(x.name)}${printSources(x.sources)}</td><td>${esc(x.value)}</td><td class="${cls(x.direction)}">${esc(x.change)}</td><td>${esc(x.description)}</td></tr>`).join('')}</tbody>
     </table>
   </section>
 
   <section class="print-section page-break">
     <div class="section-title"><span class="num">05</span><h2>Earnings Watch</h2></div>
     <div class="earnings-grid">${(d.earnings||[]).map(x=>`<article class="earning-card"><div class="earning-head"><strong>${esc(x.ticker)} <span style="font:8pt Arial">${esc(x.company)}</span></strong><span class="${cls(x.direction)}">${esc(x.headline_value)}</span></div><div class="kicker" style="margin-top:2mm">${esc(x.status)}</div><p>${esc(x.summary)}</p><div class="sources">${links(x.sources)}</div></article>`).join('')}</div>
-    <div class="appointments"><b>PROSSIMI APPUNTAMENTI</b><br>${(d.appointments||[]).map(esc).join(' · ')}</div>
+    <div class="appointments"><b>PROSSIMI APPUNTAMENTI</b><br>${(d.appointments||[]).map(esc).join(' · ')}${printSources(d.appointments_sources)}</div>
   </section>
 
   <section class="print-section">
     <div class="section-title"><span class="num">06</span><h2>Key Movers</h2></div>
     <table>
       <thead><tr><th>Ticker</th><th>Movimento</th><th>Catalyst</th></tr></thead>
-      <tbody>${(d.key_movers||[]).map(x=>`<tr><td>${esc(x.ticker)}</td><td class="${cls(x.direction)}">${esc(x.change)}</td><td>${esc(x.catalyst)}</td></tr>`).join('')}</tbody>
+      <tbody>${(d.key_movers||[]).map(x=>`<tr><td>${esc(x.ticker)}</td><td class="${cls(x.direction)}">${esc(x.change)}</td><td>${esc(x.catalyst)}${printSources(x.sources)}</td></tr>`).join('')}</tbody>
     </table>
   </section>
 
@@ -102,8 +106,8 @@ function render(d){
       <article class="focus-box bull"><div class="kicker">Scenario rialzista</div><h3>${esc(f.bull_title)}</h3><ul>${lis(f.bull_conditions)}</ul></article>
       <article class="focus-box bear"><div class="kicker" style="color:var(--red)">Scenario ribassista</div><h3>${esc(f.bear_title)}</h3><ul>${lis(f.bear_conditions)}</ul></article>
     </div>
-    <div class="setup"><div class="kicker" style="color:#efb35e">Setup preferito</div><h3>${esc(f.setup_title)}</h3><p>${esc(f.setup_summary)}</p><div class="levels">${(f.levels||[]).map((x,i)=>`<div class="level">${String(i+1).padStart(2,'0')} · ${esc(x)}</div>`).join('')}</div></div>
-    <div class="methodology"><b>Fonti e metodologia.</b> ${esc(d.methodology)}</div>
+    <div class="setup"><div class="kicker" style="color:#efb35e">Setup preferito</div><h3>${esc(f.setup_title)}</h3><p>${esc(f.setup_summary)}</p>${printSources(f.sources)}<div class="levels">${(f.levels||[]).map((x,i)=>`<div class="level">${String(i+1).padStart(2,'0')} · ${esc(x)}</div>`).join('')}</div></div>
+    <div class="methodology" id="metodologia"><b>Fonti e metodologia.</b> ${esc(d.methodology)}</div>
   </section>`;
 }
 

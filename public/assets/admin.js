@@ -32,6 +32,32 @@ function parseEdition(){
   if(!edition.meta?.date || !/^\d{4}-\d{2}-\d{2}$/.test(edition.meta.date)){
     throw new Error('meta.date deve essere nel formato YYYY-MM-DD.');
   }
+
+  const validSources = sources =>
+    Array.isArray(sources) &&
+    sources.length > 0 &&
+    sources.every(source => source?.name?.trim() && source?.url?.trim());
+
+  const requireSources = (sources, label) => {
+    if(!validSources(sources)) throw new Error(`Manca una fonte specifica per: ${label}`);
+  };
+
+  requireSources(edition.meta.sources, 'data, orario e sessione');
+  requireSources(edition.market_regime.sources, 'Market Regime e breadth score');
+  edition.market_tiles.forEach((x,i)=>requireSources(x.sources, `market_tiles[${i}]`));
+  edition.top_news.forEach((x,i)=>requireSources(x.sources, `top_news[${i}]`));
+  requireSources(edition.macro_rates.lead_sources || edition.macro_rates.sources, 'valore principale Macro & Rates');
+  edition.macro_rates.metrics.forEach((x,i)=>requireSources(x.sources, `macro_rates.metrics[${i}]`));
+  edition.catalysts.forEach((x,i)=>requireSources(x.sources, `catalysts[${i}]`));
+  requireSources(edition.indices_summary.us_sources, 'riepilogo indici USA');
+  requireSources(edition.indices_summary.europe_sources, 'riepilogo indici Europa');
+  edition.indices.forEach((x,i)=>requireSources(x.sources, `indices[${i}]`));
+  edition.intermarket.forEach((x,i)=>requireSources(x.sources, `intermarket[${i}]`));
+  edition.earnings.forEach((x,i)=>requireSources(x.sources, `earnings[${i}]`));
+  requireSources(edition.appointments_sources, 'calendario appuntamenti');
+  edition.key_movers.forEach((x,i)=>requireSources(x.sources, `key_movers[${i}]`));
+  requireSources(edition.trading_focus.sources, 'livelli operativi e Trading Focus');
+
   return edition;
 }
 

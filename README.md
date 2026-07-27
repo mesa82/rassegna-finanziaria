@@ -64,3 +64,49 @@ Nella finestra di stampa del browser usare:
 - Margini: `Predefiniti`
 - Grafica di sfondo: attiva
 - Intestazioni e piè di pagina del browser: disattivati
+
+
+## Binding KV permanente — V5
+
+Il file `wrangler.jsonc` contiene ora il collegamento permanente:
+
+```json
+"kv_namespaces": [
+  {
+    "binding": "RASSEGNA_DATA",
+    "id": "14214b986f654ad4aefa4be172cc5d91"
+  }
+]
+```
+
+Da questo momento i deploy eseguiti dal repository GitHub manterranno il binding
+`RASSEGNA_DATA` verso il namespace `rassegna-finanziaria-data`.
+
+Il segreto `ADMIN_TOKEN` resta configurato esclusivamente nella dashboard Cloudflare
+e non deve essere inserito nel repository.
+
+
+## Copertura obbligatoria delle fonti — V6
+
+La V6 mantiene il layout esistente e aggiunge soltanto collegamenti fonte compatti
+accanto ai dati numerici.
+
+Il pannello di pubblicazione rifiuta un JSON quando manca una fonte specifica per:
+
+- data, orario e sessione;
+- Market Regime e breadth score;
+- ciascun riquadro mercato;
+- ciascun dato Macro & Rates;
+- ciascun catalyst con data;
+- riepiloghi e righe degli indici;
+- ciascun dato intermarket;
+- earnings e movimenti dei titoli;
+- calendario degli appuntamenti;
+- livelli del Trading Focus.
+
+La fonte generica a fine sezione non è più sufficiente. Ogni oggetto numerico deve
+contenere `sources: [{"name":"...","url":"..."}]`.
+
+Per i livelli operativi e il breadth score è ammessa una fonte denominata
+`Elaborazione Rassegna Finanziaria`, collegata a `#metodologia`, insieme alle fonti
+dei dati di mercato sottostanti.

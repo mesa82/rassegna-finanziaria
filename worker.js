@@ -69,6 +69,71 @@ function validateEdition(edition) {
     }
   }
 
+
+  const validSources = (sources) =>
+    Array.isArray(sources) &&
+    sources.length > 0 &&
+    sources.every((source) =>
+      source &&
+      typeof source.name === "string" &&
+      source.name.trim() &&
+      typeof source.url === "string" &&
+      source.url.trim()
+    );
+
+  const requireSources = (sources, label) => {
+    if (!validSources(sources)) {
+      throw new Error(`Manca una fonte specifica per: ${label}`);
+    }
+  };
+
+  requireSources(edition.meta.sources, "data, orario e sessione");
+  requireSources(edition.market_regime.sources, "Market Regime e breadth score");
+
+  edition.market_tiles.forEach((item, index) =>
+    requireSources(item.sources, `market_tiles[${index}]`)
+  );
+
+  edition.top_news.forEach((item, index) =>
+    requireSources(item.sources, `top_news[${index}]`)
+  );
+
+  requireSources(
+    edition.macro_rates.lead_sources || edition.macro_rates.sources,
+    "valore principale Macro & Rates"
+  );
+
+  edition.macro_rates.metrics.forEach((item, index) =>
+    requireSources(item.sources, `macro_rates.metrics[${index}]`)
+  );
+
+  edition.catalysts.forEach((item, index) =>
+    requireSources(item.sources, `catalysts[${index}]`)
+  );
+
+  requireSources(edition.indices_summary.us_sources, "riepilogo indici USA");
+  requireSources(edition.indices_summary.europe_sources, "riepilogo indici Europa");
+
+  edition.indices.forEach((item, index) =>
+    requireSources(item.sources, `indices[${index}]`)
+  );
+
+  edition.intermarket.forEach((item, index) =>
+    requireSources(item.sources, `intermarket[${index}]`)
+  );
+
+  edition.earnings.forEach((item, index) =>
+    requireSources(item.sources, `earnings[${index}]`)
+  );
+
+  requireSources(edition.appointments_sources, "calendario appuntamenti");
+
+  edition.key_movers.forEach((item, index) =>
+    requireSources(item.sources, `key_movers[${index}]`)
+  );
+
+  requireSources(edition.trading_focus.sources, "livelli operativi e Trading Focus");
+
   return edition;
 }
 

@@ -5,7 +5,17 @@
     "edition": "27 · 07",
     "region": "EUROPE / US",
     "updated_at": "18:05 CEST",
-    "session": "Wall Street intraday"
+    "session": "Wall Street intraday",
+    "sources": [
+      {
+        "name": "Associated Press · chiusura Wall Street",
+        "url": "https://apnews.com/article/e7325919557efc52535a96f09ab38b0d"
+      },
+      {
+        "name": "Reuters · mercati globali",
+        "url": "https://www.reuters.com/world/china/global-markets-wrapup-1-2026-07-27/"
+      }
+    ]
   },
   "market_regime": {
     "label": "RISK-ON FRAGILE",
@@ -20,6 +30,20 @@
       "Nasdaq torna positivo",
       "breadth resta sopra 2:1",
       "US 10Y sotto 4,65%"
+    ],
+    "sources": [
+      {
+        "name": "Associated Press · chiusura Wall Street",
+        "url": "https://apnews.com/article/e7325919557efc52535a96f09ab38b0d"
+      },
+      {
+        "name": "Reuters · mercati globali",
+        "url": "https://www.reuters.com/world/china/global-markets-wrapup-1-2026-07-27/"
+      },
+      {
+        "name": "Elaborazione Rassegna Finanziaria",
+        "url": "#metodologia"
+      }
     ]
   },
   "market_tiles": [
@@ -34,6 +58,12 @@
         21,
         21,
         21
+      ],
+      "sources": [
+        {
+          "name": "Associated Press · chiusura Wall Street",
+          "url": "https://apnews.com/article/e7325919557efc52535a96f09ab38b0d"
+        }
       ]
     },
     {
@@ -47,6 +77,12 @@
         23,
         26,
         26
+      ],
+      "sources": [
+        {
+          "name": "Associated Press · chiusura Wall Street",
+          "url": "https://apnews.com/article/e7325919557efc52535a96f09ab38b0d"
+        }
       ]
     },
     {
@@ -60,6 +96,12 @@
         12,
         12,
         10
+      ],
+      "sources": [
+        {
+          "name": "Associated Press · chiusura Wall Street",
+          "url": "https://apnews.com/article/e7325919557efc52535a96f09ab38b0d"
+        }
       ]
     },
     {
@@ -73,6 +115,12 @@
         20,
         24,
         25
+      ],
+      "sources": [
+        {
+          "name": "Reuters · mercati globali",
+          "url": "https://www.reuters.com/world/china/global-markets-wrapup-1-2026-07-27/"
+        }
       ]
     }
   ],
@@ -135,29 +183,59 @@
     "metrics": [
       {
         "label": "Probabilità rialzo Fed 29 luglio",
-        "value": "~38%"
+        "value": "~38%",
+        "sources": [
+          {
+            "name": "Reuters · beni capitali USA",
+            "url": "https://www.reuters.com/business/us-core-capital-goods-orders-increase-strongly-june-2026-07-27/"
+          }
+        ]
       },
       {
         "label": "Probabilità rialzo entro settembre",
-        "value": "~81%"
+        "value": "~81%",
+        "sources": [
+          {
+            "name": "Reuters · beni capitali USA",
+            "url": "https://www.reuters.com/business/us-core-capital-goods-orders-increase-strongly-june-2026-07-27/"
+          }
+        ]
       },
       {
         "label": "Ordini core beni capitali",
-        "value": "+0,9%"
+        "value": "+0,9%",
+        "sources": [
+          {
+            "name": "Reuters · beni capitali USA",
+            "url": "https://www.reuters.com/business/us-core-capital-goods-orders-increase-strongly-june-2026-07-27/"
+          }
+        ]
       },
       {
         "label": "Spedizioni core",
-        "value": "+1,9%"
+        "value": "+1,9%",
+        "sources": [
+          {
+            "name": "Reuters · beni capitali USA",
+            "url": "https://www.reuters.com/business/us-core-capital-goods-orders-increase-strongly-june-2026-07-27/"
+          }
+        ]
       }
     ],
     "sources": [
       {
-        "name": "CME FedWatch",
-        "url": "https://www.cmegroup.com/markets/interest-rates/cme-fedwatch-tool.html"
+        "name": "Reuters · mercati globali",
+        "url": "https://www.reuters.com/world/china/global-markets-wrapup-1-2026-07-27/"
       },
       {
-        "name": "Reuters",
-        "url": "https://www.reuters.com/"
+        "name": "Reuters · beni capitali USA",
+        "url": "https://www.reuters.com/business/us-core-capital-goods-orders-increase-strongly-june-2026-07-27/"
+      }
+    ],
+    "lead_sources": [
+      {
+        "name": "Reuters · mercati globali",
+        "url": "https://www.reuters.com/world/china/global-markets-wrapup-1-2026-07-27/"
       }
     ]
   },
@@ -165,64 +243,136 @@
     {
       "date": "PUBBLICATO",
       "title": "Beni durevoli USA",
-      "summary": "Headline +0,3%; core capital goods +0,9%"
+      "summary": "Headline +0,3%; core capital goods +0,9%",
+      "sources": [
+        {
+          "name": "Federal Reserve · calendario",
+          "url": "https://www.federalreserve.gov/newsevents/2026-july.htm"
+        }
+      ]
     },
     {
       "date": "29 LUG",
       "title": "FOMC",
-      "summary": "Hold base case; rischio rialzo 25 pb intorno al 38%"
+      "summary": "Hold base case; rischio rialzo 25 pb intorno al 38%",
+      "sources": [
+        {
+          "name": "Federal Reserve · calendario",
+          "url": "https://www.federalreserve.gov/newsevents/2026-july.htm"
+        }
+      ]
     },
     {
       "date": "29 LUG",
       "title": "Microsoft e Meta",
-      "summary": "Test decisivo su capex AI, cloud e monetizzazione"
+      "summary": "Test decisivo su capex AI, cloud e monetizzazione",
+      "sources": [
+        {
+          "name": "Federal Reserve · calendario",
+          "url": "https://www.federalreserve.gov/newsevents/2026-july.htm"
+        }
+      ]
     },
     {
       "date": "30 LUG",
       "title": "Apple e PCE USA",
-      "summary": "Inflazione core e ultime mega-cap"
+      "summary": "Inflazione core e ultime mega-cap",
+      "sources": [
+        {
+          "name": "Federal Reserve · calendario",
+          "url": "https://www.federalreserve.gov/newsevents/2026-july.htm"
+        }
+      ]
     }
   ],
   "indices_summary": {
     "us": "S&P +0,03% · Nasdaq −0,20% · Dow +0,67%",
-    "europe": "STOXX 600 +0,35% · DAX +1,72% · CAC +0,99%"
+    "europe": "STOXX 600 +0,35% · DAX +1,72% · CAC +0,99%",
+    "us_sources": [
+      {
+        "name": "Associated Press · chiusura Wall Street",
+        "url": "https://apnews.com/article/e7325919557efc52535a96f09ab38b0d"
+      }
+    ],
+    "europe_sources": [
+      {
+        "name": "Reuters · chiusura Europa",
+        "url": "https://www.reuters.com/world/china/european-shares-climb-as-us-iran-peace-optimism-lifts-risk-sentiment-2026-07-27/"
+      }
+    ]
   },
   "indices": [
     {
       "name": "S&P 500",
       "level": "7.414,01",
       "change": "+0,03%",
-      "direction": "up"
+      "direction": "up",
+      "sources": [
+        {
+          "name": "Associated Press · chiusura Wall Street",
+          "url": "https://apnews.com/article/e7325919557efc52535a96f09ab38b0d"
+        }
+      ]
     },
     {
       "name": "Nasdaq Composite",
       "level": "24.925,25",
       "change": "−0,20%",
-      "direction": "down"
+      "direction": "down",
+      "sources": [
+        {
+          "name": "Associated Press · chiusura Wall Street",
+          "url": "https://apnews.com/article/e7325919557efc52535a96f09ab38b0d"
+        }
+      ]
     },
     {
       "name": "Dow Jones",
       "level": "52.294,06",
       "change": "+0,67%",
-      "direction": "up"
+      "direction": "up",
+      "sources": [
+        {
+          "name": "Associated Press · chiusura Wall Street",
+          "url": "https://apnews.com/article/e7325919557efc52535a96f09ab38b0d"
+        }
+      ]
     },
     {
       "name": "Russell 2000",
       "level": "intraday",
       "change": "+1,50%",
-      "direction": "up"
+      "direction": "up",
+      "sources": [
+        {
+          "name": "Associated Press · chiusura Wall Street",
+          "url": "https://apnews.com/article/e7325919557efc52535a96f09ab38b0d"
+        }
+      ]
     },
     {
       "name": "STOXX 600",
       "level": "chiusura",
       "change": "+0,35%",
-      "direction": "up"
+      "direction": "up",
+      "sources": [
+        {
+          "name": "Reuters · chiusura Europa",
+          "url": "https://www.reuters.com/world/china/european-shares-climb-as-us-iran-peace-optimism-lifts-risk-sentiment-2026-07-27/"
+        }
+      ]
     },
     {
       "name": "DAX",
       "level": "25.529,87",
       "change": "+1,72%",
-      "direction": "up"
+      "direction": "up",
+      "sources": [
+        {
+          "name": "Reuters · chiusura Europa",
+          "url": "https://www.reuters.com/world/china/european-shares-climb-as-us-iran-peace-optimism-lifts-risk-sentiment-2026-07-27/"
+        }
+      ]
     }
   ],
   "intermarket": [
@@ -231,56 +381,104 @@
       "description": "Il dollaro perde parte della domanda difensiva",
       "value": "≈101,2",
       "change": "↓ lieve",
-      "direction": "up"
+      "direction": "up",
+      "sources": [
+        {
+          "name": "Reuters · mercati globali",
+          "url": "https://www.reuters.com/world/china/global-markets-wrapup-1-2026-07-27/"
+        }
+      ]
     },
     {
       "name": "EUR / USD",
       "description": "L’euro conserva un rialzo modesto",
       "value": "1,1374",
       "change": "+0,1%",
-      "direction": "up"
+      "direction": "up",
+      "sources": [
+        {
+          "name": "Reuters · mercati globali",
+          "url": "https://www.reuters.com/world/china/global-markets-wrapup-1-2026-07-27/"
+        }
+      ]
     },
     {
       "name": "US Treasury 10Y",
       "description": "Rendimenti più bassi, ma crescita ancora robusta",
       "value": "4,655%",
       "change": "−2,4 pb",
-      "direction": "up"
+      "direction": "up",
+      "sources": [
+        {
+          "name": "Reuters · mercati globali",
+          "url": "https://www.reuters.com/world/china/global-markets-wrapup-1-2026-07-27/"
+        }
+      ]
     },
     {
       "name": "Brent",
       "description": "Sollievo geopolitico forte",
       "value": "$90,18",
       "change": "−6,82%",
-      "direction": "up"
+      "direction": "up",
+      "sources": [
+        {
+          "name": "Reuters · mercati globali",
+          "url": "https://www.reuters.com/world/china/global-markets-wrapup-1-2026-07-27/"
+        }
+      ]
     },
     {
       "name": "WTI",
       "description": "Minore pressione su inflazione e consumi USA",
       "value": "$83,66",
       "change": "−6,35%",
-      "direction": "up"
+      "direction": "up",
+      "sources": [
+        {
+          "name": "Reuters · mercati globali",
+          "url": "https://www.reuters.com/world/china/global-markets-wrapup-1-2026-07-27/"
+        }
+      ]
     },
     {
       "name": "Oro spot",
       "description": "Beneficia di rendimenti più bassi",
       "value": "$4.069,42",
       "change": "+0,42%",
-      "direction": "up"
+      "direction": "up",
+      "sources": [
+        {
+          "name": "Reuters · mercati globali",
+          "url": "https://www.reuters.com/world/china/global-markets-wrapup-1-2026-07-27/"
+        }
+      ]
     },
     {
       "name": "Bitcoin",
       "description": "Non conferma il risk-on azionario",
       "value": "$64.561",
       "change": "−0,2%",
-      "direction": "up"
+      "direction": "up",
+      "sources": [
+        {
+          "name": "Reuters · mercati globali",
+          "url": "https://www.reuters.com/world/china/global-markets-wrapup-1-2026-07-27/"
+        }
+      ]
     },
     {
       "name": "VIX spot",
       "description": "Volatilità sotto 18",
       "value": "17,85",
       "change": "−0,75 pt",
-      "direction": "up"
+      "direction": "up",
+      "sources": [
+        {
+          "name": "Reuters · mercati globali",
+          "url": "https://www.reuters.com/world/china/global-markets-wrapup-1-2026-07-27/"
+        }
+      ]
     }
   ],
   "earnings": [
@@ -350,37 +548,97 @@
       "ticker": "BKR",
       "change": "+8,6%",
       "direction": "up",
-      "catalyst": "Utile Q2 sopra le attese e ordini record"
+      "catalyst": "Utile Q2 sopra le attese e ordini record",
+      "sources": [
+        {
+          "name": "Associated Press · chiusura Wall Street",
+          "url": "https://apnews.com/article/e7325919557efc52535a96f09ab38b0d"
+        },
+        {
+          "name": "Reuters · mercati globali",
+          "url": "https://www.reuters.com/world/china/global-markets-wrapup-1-2026-07-27/"
+        }
+      ]
     },
     {
       "ticker": "CCL",
       "change": "+3,6%",
       "direction": "up",
-      "catalyst": "Crociere favorite dal crollo del petrolio"
+      "catalyst": "Crociere favorite dal crollo del petrolio",
+      "sources": [
+        {
+          "name": "Associated Press · chiusura Wall Street",
+          "url": "https://apnews.com/article/e7325919557efc52535a96f09ab38b0d"
+        },
+        {
+          "name": "Reuters · mercati globali",
+          "url": "https://www.reuters.com/world/china/global-markets-wrapup-1-2026-07-27/"
+        }
+      ]
     },
     {
       "ticker": "UAL",
       "change": "+3,3%",
       "direction": "up",
-      "catalyst": "Minori costi carburante"
+      "catalyst": "Minori costi carburante",
+      "sources": [
+        {
+          "name": "Associated Press · chiusura Wall Street",
+          "url": "https://apnews.com/article/e7325919557efc52535a96f09ab38b0d"
+        },
+        {
+          "name": "Reuters · mercati globali",
+          "url": "https://www.reuters.com/world/china/global-markets-wrapup-1-2026-07-27/"
+        }
+      ]
     },
     {
       "ticker": "GOOGL",
       "change": "+3,0%",
       "direction": "up",
-      "catalyst": "Communication services guida l’S&P 500"
+      "catalyst": "Communication services guida l’S&P 500",
+      "sources": [
+        {
+          "name": "Associated Press · chiusura Wall Street",
+          "url": "https://apnews.com/article/e7325919557efc52535a96f09ab38b0d"
+        },
+        {
+          "name": "Reuters · mercati globali",
+          "url": "https://www.reuters.com/world/china/global-markets-wrapup-1-2026-07-27/"
+        }
+      ]
     },
     {
       "ticker": "NVDA",
       "change": "−2,0%",
       "direction": "down",
-      "catalyst": "Pressione competitiva sul comparto AI"
+      "catalyst": "Pressione competitiva sul comparto AI",
+      "sources": [
+        {
+          "name": "Associated Press · chiusura Wall Street",
+          "url": "https://apnews.com/article/e7325919557efc52535a96f09ab38b0d"
+        },
+        {
+          "name": "Reuters · mercati globali",
+          "url": "https://www.reuters.com/world/china/global-markets-wrapup-1-2026-07-27/"
+        }
+      ]
     },
     {
       "ticker": "OXY",
       "change": "−2,0%",
       "direction": "down",
-      "catalyst": "Energia penalizzata dal Brent"
+      "catalyst": "Energia penalizzata dal Brent",
+      "sources": [
+        {
+          "name": "Associated Press · chiusura Wall Street",
+          "url": "https://apnews.com/article/e7325919557efc52535a96f09ab38b0d"
+        },
+        {
+          "name": "Reuters · mercati globali",
+          "url": "https://www.reuters.com/world/china/global-markets-wrapup-1-2026-07-27/"
+        }
+      ]
     }
   ],
   "trading_focus": {
@@ -407,7 +665,27 @@
       "Brent $90 / $92",
       "US 10Y 4,65 / 4,68%",
       "Breadth e VIX"
+    ],
+    "sources": [
+      {
+        "name": "Associated Press · chiusura Wall Street",
+        "url": "https://apnews.com/article/e7325919557efc52535a96f09ab38b0d"
+      },
+      {
+        "name": "Reuters · mercati globali",
+        "url": "https://www.reuters.com/world/china/global-markets-wrapup-1-2026-07-27/"
+      },
+      {
+        "name": "Elaborazione Rassegna Finanziaria",
+        "url": "#metodologia"
+      }
     ]
   },
-  "methodology": "Dati verificabili, lettura editoriale. I valori di mercato sono riferiti all’orario indicato. Verificare sempre le fonti originali prima di prendere decisioni operative."
+  "methodology": "Dati verificabili, lettura editoriale. I valori di mercato sono riferiti all’orario indicato. Verificare sempre le fonti originali prima di prendere decisioni operative.",
+  "appointments_sources": [
+    {
+      "name": "Federal Reserve · calendario",
+      "url": "https://www.federalreserve.gov/newsevents/2026-july.htm"
+    }
+  ]
 }

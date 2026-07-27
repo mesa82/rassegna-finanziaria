@@ -202,3 +202,23 @@ h1{font-size:72px;line-height:.96;margin:12px 0 18px;letter-spacing:-.04em}
   .admin-toolbar>div{flex-wrap:wrap}
   .admin-panel textarea{min-height:420px}
 }
+
+
+.data-source{
+  margin-top:6px;
+  font-size:7px;
+  line-height:1.35;
+  letter-spacing:.08em;
+  text-transform:uppercase;
+  color:var(--teal);
+  font-weight:700;
+}
+.data-source a{color:var(--teal);text-decoration:none}
+.data-source a:hover{text-decoration:underline}
+.date-row>.data-source{width:100%;margin-top:0}
+.gauge .data-source{text-align:center;max-width:220px}
+.ticker .data-source{margin-top:4px}
+.metric-row .data-source{margin-top:3px}
+.table-row .data-source,.inter-row .data-source{font-family:Arial,Helvetica,sans-serif}
+.setup .data-source{color:#69d4ca}
+.setup .data-source a{color:#69d4ca}
