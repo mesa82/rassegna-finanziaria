@@ -7,6 +7,12 @@
     "directory": "./public",
     "binding": "ASSETS"
   },
+  "kv_namespaces": [
+    {
+      "binding": "RASSEGNA_DATA",
+      "id": "14214b986f654ad4aefa4be172cc5d91"
+    }
+  ],
   "observability": {
     "enabled": true
   }
