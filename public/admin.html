@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Pubblica rassegna — Rassegna Finanziaria</title>
+<link rel="stylesheet" href="/assets/styles.css">
+</head>
+<body>
+<button class="mobile-toggle" aria-label="Apri menu">☰</button>
+<aside class="sidebar">
+  <a class="logo-wrap" href="/"><img src="/assets/logo.png" alt="Trader Nuorese"></a>
+  <nav class="nav">
+    <a href="/"><span class="num">←</span>Ultima rassegna</a>
+    <a href="/archivio.html"><span class="num">01</span>Archivio</a>
+    <a href="/admin.html"><span class="num">02</span>Pubblica</a>
+  </nav>
+  <div class="side-footer"><strong>AREA RISERVATA</strong>Pubblicazione manuale</div>
+</aside>
+<main>
+  <div class="shell">
+    <header class="archive-hero">
+      <div class="eyebrow">Area di pubblicazione</div>
+      <h1 style="font-size:64px">Nuova rassegna</h1>
+      <p style="color:#5c6b7d;max-width:820px">
+        Incolla il blocco <strong>DASHBOARD_JSON</strong> prodotto dalla rassegna ChatGPT delle 13:00.
+        Il token viene usato solo per questa richiesta e non è salvato nel sito.
+      </p>
+    </header>
+
+    <section class="section">
+      <div class="card admin-panel">
+        <label for="admin-token">Token amministratore</label>
+        <input id="admin-token" type="password" autocomplete="current-password" placeholder="Inserisci ADMIN_TOKEN">
+
+        <div class="admin-toolbar">
+          <label for="json-input">JSON della rassegna</label>
+          <div>
+            <button type="button" class="secondary-button" id="load-example">Carica esempio</button>
+            <button type="button" class="secondary-button" id="format-json">Formatta JSON</button>
+          </div>
+        </div>
+
+        <textarea id="json-input" spellcheck="false" placeholder='Incolla qui il contenuto del blocco JSON, iniziando con { e terminando con }'></textarea>
+
+        <div id="validation-result" class="admin-message" aria-live="polite"></div>
+
+        <div class="admin-actions">
+          <a class="secondary-button" href="/">Annulla</a>
+          <button type="button" class="publish-button" id="publish-button">Pubblica e archivia</button>
+        </div>
+      </div>
+    </section>
+  </div>
+</main>
+<script src="/assets/admin.js"></script>
+</body>
+</html>

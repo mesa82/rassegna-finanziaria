@@ -11,7 +11,13 @@ const spark = values => {
 const list = arr => (arr || []).map(x => `<li>${esc(x)}</li>`).join('');
 const metricRows = arr => (arr || []).map(x => `<div class="metric-row"><span>${esc(x.label)}</span><strong>${esc(x.value)}</strong></div>`).join('');
 
-async function loadLatest(){
+async function loadEdition(){
+  const selectedDate = new URLSearchParams(location.search).get('date');
+  if(selectedDate){
+    const archived = await fetch(`/api/edition/${encodeURIComponent(selectedDate)}`, {cache:'no-store'});
+    if(archived.ok) return await archived.json();
+    throw new Error('Edizione archivio non disponibile');
+  }
   try{
     const r = await fetch('/api/latest', {cache:'no-store'});
     if(r.ok) return await r.json();
@@ -32,7 +38,7 @@ function render(d){
       <div class="date-row">
         <span>${esc(m.date_label)}</span>
         <span class="pill">${esc(m.session)} · aggiornato ${esc(m.updated_at)}</span>
-        <button class="refresh" id="refresh-data">↻ Aggiorna dati</button>
+        <a class="refresh" href="/admin.html">Pubblica rassegna</a>
       </div>
     </div>
     <div class="edition"><span>EDIZIONE</span><strong>${esc(m.edition)}</strong><span>${esc(m.region)}</span></div>
@@ -107,25 +113,12 @@ function render(d){
   </section>`;
 }
 
-async function manualRefresh(){
-  const token = prompt('Inserisci il token amministratore per generare una nuova rassegna:');
-  if(!token) return;
-  const btn = document.querySelector('#refresh-data');
-  btn.disabled = true; btn.textContent = 'Generazione in corso…';
-  try{
-    const r = await fetch('/api/refresh',{method:'POST',headers:{'x-admin-token':token}});
-    const body = await r.json();
-    if(!r.ok) throw new Error(body.error || 'Aggiornamento non riuscito');
-    location.reload();
-  }catch(e){ alert(e.message); btn.disabled=false; btn.textContent='↻ Aggiorna dati'; }
-}
 
 (async()=>{
   const app = document.querySelector('#app');
   try{
-    const data = await loadLatest();
+    const data = await loadEdition();
     app.innerHTML = render(data);
-    document.querySelector('#refresh-data')?.addEventListener('click',manualRefresh);
   }catch(e){ app.innerHTML = `<div class="card" style="padding:30px"><h2>Rassegna non disponibile</h2><p>${esc(e.message)}</p></div>`; }
   const toggle=document.querySelector('.mobile-toggle'),sidebar=document.querySelector('.sidebar');
   toggle?.addEventListener('click',()=>sidebar.classList.toggle('open'));
