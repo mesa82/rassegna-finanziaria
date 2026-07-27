@@ -109,7 +109,7 @@ function render(d){
     <div class="focus-grid"><article class="card scenario bull"><div class="eyebrow">Scenario rialzista</div><h3>${esc(f.bull_title)}</h3><ul class="checklist">${list(f.bull_conditions)}</ul></article><article class="card scenario bear"><div class="eyebrow" style="color:var(--red)">Scenario ribassista</div><h3>${esc(f.bear_title)}</h3><ul class="checklist">${list(f.bear_conditions)}</ul></article></div>
     <div class="card setup"><div><div class="eyebrow" style="color:#efad49">Setup preferito</div><h3>${esc(f.setup_title)}</h3><p>${esc(f.setup_summary)}</p></div><div class="levels">${(f.levels||[]).map((x,i)=>`<div class="level">${String(i+1).padStart(2,'0')} &nbsp; ${esc(x)}</div>`).join('')}</div></div>
     <div class="card method"><div><div class="eyebrow">Fonti &amp; metodologia</div><h3>Dati verificabili, lettura editoriale</h3><p>${esc(d.methodology)}</p></div></div>
-    <div class="pdfbar"><div><div class="eyebrow" style="color:#efad49">Documento completo</div><p style="font-family:Georgia,serif;font-style:italic;margin:8px 0 0">Salva o stampa la rassegna giornaliera in formato PDF.</p></div><button onclick="window.print()">↓ &nbsp; Esporta in PDF</button></div>
+    <div class="pdfbar"><div><div class="eyebrow" style="color:#efad49">Documento completo</div><p style="font-family:Georgia,serif;font-style:italic;margin:8px 0 0">Apre una versione A4 ottimizzata per stampa e PDF.</p></div><a class="pdf-button" href="/stampa.html?date=${encodeURIComponent(m.date)}&auto=1" target="_blank" rel="noopener">↓ &nbsp; Esporta in PDF</a></div>
   </section>`;
 }
 

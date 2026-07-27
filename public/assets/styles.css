@@ -132,7 +132,7 @@ h1{font-size:72px;line-height:.96;margin:12px 0 18px;letter-spacing:-.04em}
 .method p{font-size:11px;line-height:1.55;color:#506078}
 .links{display:grid;grid-template-columns:1fr 1fr;gap:9px;font-size:9px;color:var(--teal);font-weight:700}
 .pdfbar{margin-top:20px;background:var(--navy);color:#fff;border-radius:8px;padding:22px 26px;display:flex;justify-content:space-between;align-items:center}
-.pdfbar button{background:#efb35e;border:0;border-radius:5px;padding:14px 24px;color:#102a48;font-weight:700;cursor:pointer}
+.pdfbar button,.pdfbar .pdf-button{display:inline-flex;align-items:center;justify-content:center;background:#efb35e;border:0;border-radius:5px;padding:14px 24px;color:#102a48;font-weight:700;cursor:pointer;text-decoration:none}
 .archive-hero{padding:60px 0 25px;border-bottom:1px solid var(--line)}
 .archive-list{display:grid;grid-template-columns:repeat(3,1fr);gap:15px;margin-top:25px}
 .archive-card{padding:22px}

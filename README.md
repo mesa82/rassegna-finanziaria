@@ -42,3 +42,25 @@ Dopo il deploy controllare la scheda **Binding**. Se il binding KV non fosse pi�
 
 La pagina `admin.html` è pubblicamente raggiungibile, ma non può pubblicare nulla senza il segreto `ADMIN_TOKEN`.
 Il token non viene memorizzato dal browser.
+
+
+## Esportazione PDF V4
+
+Il pulsante **Esporta in PDF** apre `/stampa.html`, una vista A4 dedicata con:
+
+- sidebar rimossa;
+- tipografia e tabelle ottimizzate;
+- sezioni distribuite su pagine leggibili;
+- righe delle tabelle non spezzate;
+- intestazioni delle tabelle ripetute quando possibile;
+- collegamento automatico all'edizione corrente o archiviata.
+
+Nella finestra di stampa del browser usare:
+
+- Destinazione: `Salva come PDF`
+- Formato carta: `A4`
+- Orientamento: `Verticale`
+- Scala: `100`
+- Margini: `Predefiniti`
+- Grafica di sfondo: attiva
+- Intestazioni e piè di pagina del browser: disattivati
