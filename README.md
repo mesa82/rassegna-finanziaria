@@ -110,3 +110,19 @@ contenere `sources: [{"name":"...","url":"..."}]`.
 Per i livelli operativi e il breadth score è ammessa una fonte denominata
 `Elaborazione Rassegna Finanziaria`, collegata a `#metodologia`, insieme alle fonti
 dei dati di mercato sottostanti.
+
+
+## Weekly Market Monitor — V7
+
+La V7 aggiunge la sezione `market_monitor` dopo Intermarket Dashboard.
+
+Regole:
+- utilizza soltanto l'ultima settimana completa;
+- 1W, 1M e YTD sono distinti;
+- ogni riga dichiara lo strumento o proxy;
+- ogni riga contiene fonti obbligatorie;
+- la sezione è inclusa anche nella stampa PDF;
+- il pannello di pubblicazione rifiuta JSON senza `market_monitor`.
+
+Per la prima integrazione i valori al 24/07/2026 sono stati importati dal prospetto
+fornito dall'utente, salvato come `/public/assets/market-monitor-2026-07-24.png`.

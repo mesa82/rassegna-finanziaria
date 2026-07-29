@@ -23,7 +23,7 @@ function parseEdition(){
   const edition = JSON.parse(raw);
   const required = [
     'meta','market_regime','market_tiles','top_news','macro_rates','catalysts',
-    'indices_summary','indices','intermarket','earnings','appointments',
+    'indices_summary','indices','intermarket','market_monitor','earnings','appointments',
     'key_movers','trading_focus','methodology'
   ];
   for(const key of required){
@@ -56,6 +56,14 @@ function parseEdition(){
   edition.earnings.forEach((x,i)=>requireSources(x.sources, `earnings[${i}]`));
   requireSources(edition.appointments_sources, 'calendario appuntamenti');
   edition.key_movers.forEach((x,i)=>requireSources(x.sources, `key_movers[${i}]`));
+  if(!edition.market_monitor || !Array.isArray(edition.market_monitor.sections)){
+    throw new Error('market_monitor incompleto.');
+  }
+  requireSources(edition.market_monitor.sources, 'Market Monitor settimanale');
+  edition.market_monitor.sections.forEach((section,si)=>{
+    if(!Array.isArray(section.rows)) throw new Error(`market_monitor.sections[${si}].rows deve essere un array.`);
+    section.rows.forEach((row,ri)=>requireSources(row.sources, `market_monitor.sections[${si}].rows[${ri}]`));
+  });
   requireSources(edition.trading_focus.sources, 'livelli operativi e Trading Focus');
 
   return edition;

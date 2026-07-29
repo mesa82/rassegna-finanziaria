@@ -1,44 +1,49 @@
 {
   "meta": {
-    "date": "2026-07-27",
-    "date_label": "27 luglio 2026",
-    "edition": "27 · 07",
+    "date": "2026-07-29",
+    "date_label": "29 luglio 2026",
+    "edition": "29 · 07",
     "region": "EUROPE / US",
-    "updated_at": "18:05 CEST",
-    "session": "Wall Street intraday",
+    "updated_at": "17:39 CEST",
+    "session": "Wall Street intraday 11:39 ET · Europa chiusa · pre-FOMC",
     "sources": [
       {
-        "name": "Associated Press · chiusura Wall Street",
-        "url": "https://apnews.com/article/e7325919557efc52535a96f09ab38b0d"
+        "name": "Reuters · Wall Street intraday",
+        "url": "https://www.reuters.com/business/sp-500-nasdaq-futures-inch-up-before-fed-decision-chip-stocks-wobble-2026-07-29/"
       },
       {
-        "name": "Reuters · mercati globali",
-        "url": "https://www.reuters.com/world/china/global-markets-wrapup-1-2026-07-27/"
+        "name": "Reuters · chiusura Europa",
+        "url": "https://www.reuters.com/world/asia-pacific/european-shares-edge-up-commodities-boost-tech-drags-after-sk-hynix-miss-2026-07-29/"
+      },
+      {
+        "name": "Federal Reserve · calendario luglio 2026",
+        "url": "https://www.federalreserve.gov/newsevents/2026-july.htm"
       }
     ]
   },
   "market_regime": {
-    "label": "RISK-ON FRAGILE",
-    "summary": "Il forte gap pre-market è stato in gran parte riassorbito. La breadth resta positiva e le small cap sovraperformano, ma il tech impedisce al relief rally di consolidarsi.",
-    "breadth_score": 26,
-    "breadth_note": "POSITIVA, MA IN RESTRINGIMENTO",
-    "verdict": "Moderatamente rialzista, molto selettivo",
-    "verdict_summary": "Dow, small cap e breadth restano costruttivi, ma il Nasdaq ha perso tutto il vantaggio iniziale. Privilegiare forza relativa e pullback ordinati.",
-    "risk": "MEDIO-ALTO",
+    "label": "RISK-OFF IN AMPLIAMENTO",
+    "summary": "La vendita non è più confinata ai semiconduttori: Dow, S&P 500 e Nasdaq arretrano insieme, industriali e chip guidano i ribassi e la breadth è nettamente negativa. Consumer staples e healthcare mantengono una tenuta relativa, ma il rialzo del petrolio e dei rendimenti riduce il margine per una rapida espansione dei multipli.",
+    "breadth_score": -44,
+    "breadth_note": "NYSE 2,22:1 · NASDAQ 2,32:1 A FAVORE DEI RIBASSI",
+    "verdict": "Difensivo fino alla Fed",
+    "verdict_summary": "Ridurre l'esposizione ai breakout non confermati. Privilegiare titoli con earnings solidi e forza relativa; attendere la reazione di rendimenti e chip alla decisione FOMC.",
+    "risk": "ALTO",
     "confirmations": [
-      "S&P recupera +0,3%",
-      "Nasdaq torna positivo",
-      "breadth resta sopra 2:1",
-      "US 10Y sotto 4,65%"
+      "S&P 500 recupera 7.365,80 e torna sopra 7.400",
+      "Nasdaq recupera 24.595,85 mentre il SOX migliora dal −3,6%",
+      "Treasury 10Y rientra sotto 4,635%",
+      "Brent torna sotto 89,94 dollari",
+      "Rapporto ribassi/rialzi scende sotto 2:1"
     ],
     "sources": [
       {
-        "name": "Associated Press · chiusura Wall Street",
-        "url": "https://apnews.com/article/e7325919557efc52535a96f09ab38b0d"
+        "name": "Reuters · Wall Street intraday e breadth",
+        "url": "https://www.reuters.com/business/sp-500-nasdaq-futures-inch-up-before-fed-decision-chip-stocks-wobble-2026-07-29/"
       },
       {
-        "name": "Reuters · mercati globali",
-        "url": "https://www.reuters.com/world/china/global-markets-wrapup-1-2026-07-27/"
+        "name": "WSJ · rendimenti Treasury",
+        "url": "https://www.wsj.com/finance/investing/jgb-futures-edge-higher-amid-mixed-signals-dbce05cd"
       },
       {
         "name": "Elaborazione Rassegna Finanziaria",
@@ -48,202 +53,226 @@
   },
   "market_tiles": [
     {
-      "label": "S&P 500 cash · 18:05",
-      "value": "+0,03%",
-      "direction": "up",
-      "spark": [
-        23,
-        8,
-        16,
-        21,
-        21,
-        21
-      ],
-      "sources": [
-        {
-          "name": "Associated Press · chiusura Wall Street",
-          "url": "https://apnews.com/article/e7325919557efc52535a96f09ab38b0d"
-        }
-      ]
-    },
-    {
-      "label": "Nasdaq cash · 18:05",
-      "value": "−0,20%",
+      "label": "S&P 500 cash · 11:39 ET",
+      "value": "7.365,80 · −0,85%",
       "direction": "down",
       "spark": [
-        23,
-        8,
-        15,
-        23,
-        26,
-        26
+        0,
+        -0.25,
+        -0.45,
+        -0.7,
+        -0.85
       ],
       "sources": [
         {
-          "name": "Associated Press · chiusura Wall Street",
-          "url": "https://apnews.com/article/e7325919557efc52535a96f09ab38b0d"
+          "name": "Reuters · Wall Street intraday",
+          "url": "https://www.reuters.com/business/sp-500-nasdaq-futures-inch-up-before-fed-decision-chip-stocks-wobble-2026-07-29/"
         }
       ]
     },
     {
-      "label": "Dow cash · 18:05",
-      "value": "+0,67%",
-      "direction": "up",
-      "spark": [
-        23,
-        14,
-        10,
-        12,
-        12,
-        10
-      ],
-      "sources": [
-        {
-          "name": "Associated Press · chiusura Wall Street",
-          "url": "https://apnews.com/article/e7325919557efc52535a96f09ab38b0d"
-        }
-      ]
-    },
-    {
-      "label": "Brent",
-      "value": "$90,18",
+      "label": "Nasdaq Composite cash · 11:39 ET",
+      "value": "24.595,85 · −1,13%",
       "direction": "down",
       "spark": [
-        6,
-        10,
-        16,
-        20,
-        24,
-        25
+        0,
+        -0.35,
+        -0.65,
+        -0.9,
+        -1.13
       ],
       "sources": [
         {
-          "name": "Reuters · mercati globali",
-          "url": "https://www.reuters.com/world/china/global-markets-wrapup-1-2026-07-27/"
+          "name": "Reuters · Wall Street intraday",
+          "url": "https://www.reuters.com/business/sp-500-nasdaq-futures-inch-up-before-fed-decision-chip-stocks-wobble-2026-07-29/"
+        }
+      ]
+    },
+    {
+      "label": "Dow Jones cash · 11:39 ET",
+      "value": "51.918,32 · −1,57%",
+      "direction": "down",
+      "spark": [
+        0,
+        -0.4,
+        -0.85,
+        -1.2,
+        -1.57
+      ],
+      "sources": [
+        {
+          "name": "Reuters · Wall Street intraday",
+          "url": "https://www.reuters.com/business/sp-500-nasdaq-futures-inch-up-before-fed-decision-chip-stocks-wobble-2026-07-29/"
+        }
+      ]
+    },
+    {
+      "label": "Brent · pre-FOMC",
+      "value": "$89,94 · circa +8%",
+      "direction": "up",
+      "spark": [
+        0,
+        2.5,
+        4.5,
+        6.8,
+        8.0
+      ],
+      "sources": [
+        {
+          "name": "Reuters · Wall Street e petrolio",
+          "url": "https://www.reuters.com/business/sp-500-nasdaq-futures-inch-up-before-fed-decision-chip-stocks-wobble-2026-07-29/"
         }
       ]
     }
   ],
   "top_news": [
     {
-      "tag": "WALL STREET / INTRADAY",
-      "title": "Il forte gap iniziale si riduce",
-      "summary": "Il Dow sale, l’S&P 500 è quasi invariato e il Nasdaq arretra. Il quadro è meno forte dei future pre-market.",
-      "why": "Il mercato conferma la de-escalation, ma non una nuova gamba rialzista del tech.",
-      "sources": [
-        {
-          "name": "Reuters",
-          "url": "https://www.reuters.com/"
-        }
-      ]
-    },
-    {
-      "tag": "MACRO / AI CAPEX",
-      "title": "Beni strumentali USA sopra le attese",
-      "summary": "Ordini core di beni capitali e spedizioni accelerano, sostenendo il quadro di crescita.",
-      "why": "L’investimento in AI sostiene manifattura e PIL, ma rende più difficile un rapido taglio dei tassi.",
-      "sources": [
-        {
-          "name": "Reuters",
-          "url": "https://www.reuters.com/"
-        }
-      ]
-    },
-    {
       "tag": "FED / TASSI",
-      "title": "Treasury giù, ma il rischio rialzo risale",
-      "summary": "Il decennale scende, mentre i future sui Fed funds mantengono aperto il rischio evento.",
-      "why": "Il sollievo energetico aiuta i bond, ma i dati core solidi mantengono elevata l’incertezza.",
+      "title": "La Fed decide con petrolio e rendimenti in rialzo",
+      "summary": "La decisione FOMC è prevista alle 14:00 ET. Il mercato assegna il 39,9% a un rialzo, mentre lo scenario più probabile resta una pausa con tono restrittivo.",
+      "why": "Un hold accompagnato da dissensi o linguaggio hawkish può mantenere pressione sui titoli ad alta duration quasi quanto un rialzo effettivo.",
       "sources": [
         {
-          "name": "Reuters",
-          "url": "https://www.reuters.com/"
+          "name": "Reuters · decisione Fed e probabilità",
+          "url": "https://www.reuters.com/business/sp-500-nasdaq-futures-inch-up-before-fed-decision-chip-stocks-wobble-2026-07-29/"
+        },
+        {
+          "name": "Federal Reserve · orario della decisione",
+          "url": "https://www.federalreserve.gov/newsevents/2026-july.htm"
         }
       ]
     },
     {
-      "tag": "ENERGIA / TREGUA FRAGILE",
-      "title": "Petrolio crolla, ma Hormuz resta critico",
-      "summary": "Brent e WTI scendono con forza. La tregua resta condizionata e il premio geopolitico non è azzerato.",
-      "why": "Il calo riduce l’inflazione attesa, ma un nuovo attacco può invertire rapidamente il movimento.",
+      "tag": "SEMICONDUTTORI / AI",
+      "title": "La vendita sui chip si estende alla seduta USA",
+      "summary": "Nvidia perde il 2,3%, Micron il 4,6% e il Philadelphia Semiconductor Index il 3,6%; Vertiv scende del 13,2% dopo ricavi trimestrali inferiori alle attese.",
+      "why": "Il mercato sta richiedendo ritorni economici e free cash flow verificabili, non soltanto crescita della spesa per infrastrutture AI.",
       "sources": [
         {
-          "name": "Reuters",
-          "url": "https://www.reuters.com/"
+          "name": "Reuters · chip e Vertiv",
+          "url": "https://www.reuters.com/business/sp-500-nasdaq-futures-inch-up-before-fed-decision-chip-stocks-wobble-2026-07-29/"
+        }
+      ]
+    },
+    {
+      "tag": "ENERGIA / GEOPOLITICA",
+      "title": "Il Brent torna vicino a 90 dollari",
+      "summary": "Il greggio sale a 89,94 dollari dopo la ripresa delle tensioni in Medio Oriente, riportando il rischio inflazionistico al centro del FOMC.",
+      "why": "Energia più cara sostiene il comparto oil ma riduce lo spazio per una lettura disinflazionistica e aumenta il rischio di rendimenti più alti.",
+      "sources": [
+        {
+          "name": "Reuters · petrolio e geopolitica",
+          "url": "https://www.reuters.com/business/sp-500-nasdaq-futures-inch-up-before-fed-decision-chip-stocks-wobble-2026-07-29/"
+        }
+      ]
+    },
+    {
+      "tag": "EUROPA / EARNINGS",
+      "title": "Kering vola, Hermès crolla: dispersione estrema",
+      "summary": "Lo STOXX 600 chiude a 645,01 punti, −0,3%. Kering guadagna quasi il 17%, Hermès perde l'11%, ASM International il 4,8% e Sopra Steria sale del 13,6%.",
+      "why": "La selezione dei singoli titoli resta più importante della direzione dell'indice: il mercato premia sorprese positive e punisce rapidamente crescita o guidance deludenti.",
+      "sources": [
+        {
+          "name": "Reuters · chiusura Europa e movers",
+          "url": "https://www.reuters.com/world/asia-pacific/european-shares-edge-up-commodities-boost-tech-drags-after-sk-hynix-miss-2026-07-29/"
         }
       ]
     }
   ],
   "macro_rates": {
-    "headline": "Capex AI forte, petrolio in calo: segnali contrastanti per la Fed",
-    "lead_label": "US 10Y",
-    "lead_value": "4,66%",
-    "lead_delta": "−2,4 PB DA VENERDÌ",
-    "summary": "Il decennale USA tratta al 4,655% mentre il Brent perde oltre il 6%. I dati di giugno mostrano però investimenti core solidi, sostenuti da computer, elettronica e attrezzature elettriche.",
+    "headline": "Petrolio e Treasury complicano il messaggio della Fed",
+    "lead_label": "US TREASURY 10Y",
+    "lead_value": "4,635%",
+    "lead_delta": "+3,1 PB DA 4,604%",
+    "lead_sources": [
+      {
+        "name": "WSJ · Treasury yields",
+        "url": "https://www.wsj.com/finance/investing/jgb-futures-edge-higher-amid-mixed-signals-dbce05cd"
+      }
+    ],
+    "summary": "Il mercato continua a favorire una pausa, ma il rialzo simultaneo di petrolio e rendimenti rafforza lo scenario di un hold hawkish. Il dollaro è leggermente più debole, mentre le curve USA ed europee incorporano ancora un premio inflazionistico elevato.",
     "metrics": [
       {
-        "label": "Probabilità rialzo Fed 29 luglio",
-        "value": "~38%",
+        "label": "Probabilità rialzo Fed",
+        "value": "39,9%",
         "sources": [
           {
-            "name": "Reuters · beni capitali USA",
-            "url": "https://www.reuters.com/business/us-core-capital-goods-orders-increase-strongly-june-2026-07-27/"
+            "name": "Reuters · probabilità LSEG",
+            "url": "https://www.reuters.com/business/sp-500-nasdaq-futures-inch-up-before-fed-decision-chip-stocks-wobble-2026-07-29/"
           }
         ]
       },
       {
-        "label": "Probabilità rialzo entro settembre",
-        "value": "~81%",
+        "label": "Probabilità tassi invariati",
+        "value": "60,1%",
         "sources": [
           {
-            "name": "Reuters · beni capitali USA",
-            "url": "https://www.reuters.com/business/us-core-capital-goods-orders-increase-strongly-june-2026-07-27/"
+            "name": "Reuters · probabilità LSEG",
+            "url": "https://www.reuters.com/business/sp-500-nasdaq-futures-inch-up-before-fed-decision-chip-stocks-wobble-2026-07-29/"
+          },
+          {
+            "name": "Elaborazione Rassegna Finanziaria",
+            "url": "#metodologia"
           }
         ]
       },
       {
-        "label": "Ordini core beni capitali",
-        "value": "+0,9%",
+        "label": "Treasury USA 2Y",
+        "value": "4,318%",
         "sources": [
           {
-            "name": "Reuters · beni capitali USA",
-            "url": "https://www.reuters.com/business/us-core-capital-goods-orders-increase-strongly-june-2026-07-27/"
+            "name": "WSJ · Treasury yields",
+            "url": "https://www.wsj.com/finance/investing/jgb-futures-edge-higher-amid-mixed-signals-dbce05cd"
           }
         ]
       },
       {
-        "label": "Spedizioni core",
-        "value": "+1,9%",
+        "label": "Bund Germania 10Y",
+        "value": "3,122%",
         "sources": [
           {
-            "name": "Reuters · beni capitali USA",
-            "url": "https://www.reuters.com/business/us-core-capital-goods-orders-increase-strongly-june-2026-07-27/"
+            "name": "WSJ · rendimenti globali",
+            "url": "https://www.wsj.com/finance/investing/jgb-futures-edge-higher-amid-mixed-signals-dbce05cd"
+          }
+        ]
+      },
+      {
+        "label": "Dollar Index",
+        "value": "−0,1%",
+        "sources": [
+          {
+            "name": "WSJ · dollaro",
+            "url": "https://www.wsj.com/finance/investing/jgb-futures-edge-higher-amid-mixed-signals-dbce05cd"
+          }
+        ]
+      },
+      {
+        "label": "Brent",
+        "value": "$89,94",
+        "sources": [
+          {
+            "name": "Reuters · petrolio",
+            "url": "https://www.reuters.com/business/sp-500-nasdaq-futures-inch-up-before-fed-decision-chip-stocks-wobble-2026-07-29/"
           }
         ]
       }
     ],
     "sources": [
       {
-        "name": "Reuters · mercati globali",
-        "url": "https://www.reuters.com/world/china/global-markets-wrapup-1-2026-07-27/"
+        "name": "Reuters · Fed, petrolio e Wall Street",
+        "url": "https://www.reuters.com/business/sp-500-nasdaq-futures-inch-up-before-fed-decision-chip-stocks-wobble-2026-07-29/"
       },
       {
-        "name": "Reuters · beni capitali USA",
-        "url": "https://www.reuters.com/business/us-core-capital-goods-orders-increase-strongly-june-2026-07-27/"
-      }
-    ],
-    "lead_sources": [
-      {
-        "name": "Reuters · mercati globali",
-        "url": "https://www.reuters.com/world/china/global-markets-wrapup-1-2026-07-27/"
+        "name": "WSJ · rendimenti Treasury e Bund",
+        "url": "https://www.wsj.com/finance/investing/jgb-futures-edge-higher-amid-mixed-signals-dbce05cd"
       }
     ]
   },
   "catalysts": [
     {
-      "date": "PUBBLICATO",
-      "title": "Beni durevoli USA",
-      "summary": "Headline +0,3%; core capital goods +0,9%",
+      "date": "29 LUG · 14:00 ET",
+      "title": "Decisione FOMC",
+      "summary": "Mercato diviso tra pausa e rialzo; attenzione al voto e all'implementation note.",
       "sources": [
         {
           "name": "Federal Reserve · calendario",
@@ -252,9 +281,9 @@
       ]
     },
     {
-      "date": "29 LUG",
-      "title": "FOMC",
-      "summary": "Hold base case; rischio rialzo 25 pb intorno al 38%",
+      "date": "29 LUG · 14:30 ET",
+      "title": "Conferenza stampa Fed",
+      "summary": "La reazione di Treasury, dollaro e Nasdaq dipenderà dal tono di Kevin Warsh.",
       "sources": [
         {
           "name": "Federal Reserve · calendario",
@@ -263,417 +292,1009 @@
       ]
     },
     {
-      "date": "29 LUG",
+      "date": "29 LUG · AFTER CLOSE",
       "title": "Microsoft e Meta",
-      "summary": "Test decisivo su capex AI, cloud e monetizzazione",
+      "summary": "Test su Azure, advertising, capex AI, free cash flow e monetizzazione.",
       "sources": [
         {
-          "name": "Federal Reserve · calendario",
-          "url": "https://www.federalreserve.gov/newsevents/2026-july.htm"
+          "name": "Microsoft · data risultati",
+          "url": "https://news.microsoft.com/source/2026/07/08/microsoft-announces-quarterly-earnings-release-date-68/"
+        },
+        {
+          "name": "Meta · data risultati",
+          "url": "https://investor.atmeta.com/investor-news/press-release-details/2026/Meta-to-Announce-Second-Quarter-2026-Results/default.aspx"
         }
       ]
     },
     {
-      "date": "30 LUG",
-      "title": "Apple e PCE USA",
-      "summary": "Inflazione core e ultime mega-cap",
+      "date": "30 LUG · 17:00 ET",
+      "title": "Amazon e Apple",
+      "summary": "Nuovi catalyst per cloud, consumi, servizi e spesa AI.",
       "sources": [
         {
-          "name": "Federal Reserve · calendario",
-          "url": "https://www.federalreserve.gov/newsevents/2026-july.htm"
+          "name": "Amazon · earnings call Q2 2026",
+          "url": "https://ir.aboutamazon.com/news-release/news-release-details/2026/Amazon-com-to-Webcast-Second-Quarter-2026-Financial-Results-Conference-Call/default.aspx"
+        },
+        {
+          "name": "Apple · FY26 Q3 results",
+          "url": "https://investor.apple.com/investor-relations/default.aspx"
         }
       ]
     }
   ],
   "indices_summary": {
-    "us": "S&P +0,03% · Nasdaq −0,20% · Dow +0,67%",
-    "europe": "STOXX 600 +0,35% · DAX +1,72% · CAC +0,99%",
+    "us": "Intraday 11:39 ET: Dow −1,57% · S&P 500 −0,85% · Nasdaq −1,13% · SOX −3,6%.",
+    "europe": "Chiusura: STOXX 600 645,01 · −0,3% · tecnologia −0,4% · energia +2,2%.",
     "us_sources": [
       {
-        "name": "Associated Press · chiusura Wall Street",
-        "url": "https://apnews.com/article/e7325919557efc52535a96f09ab38b0d"
+        "name": "Reuters · Wall Street intraday",
+        "url": "https://www.reuters.com/business/sp-500-nasdaq-futures-inch-up-before-fed-decision-chip-stocks-wobble-2026-07-29/"
       }
     ],
     "europe_sources": [
       {
         "name": "Reuters · chiusura Europa",
-        "url": "https://www.reuters.com/world/china/european-shares-climb-as-us-iran-peace-optimism-lifts-risk-sentiment-2026-07-27/"
+        "url": "https://www.reuters.com/world/asia-pacific/european-shares-edge-up-commodities-boost-tech-drags-after-sk-hynix-miss-2026-07-29/"
       }
     ]
   },
   "indices": [
     {
-      "name": "S&P 500",
-      "level": "7.414,01",
-      "change": "+0,03%",
-      "direction": "up",
-      "sources": [
-        {
-          "name": "Associated Press · chiusura Wall Street",
-          "url": "https://apnews.com/article/e7325919557efc52535a96f09ab38b0d"
-        }
-      ]
-    },
-    {
-      "name": "Nasdaq Composite",
-      "level": "24.925,25",
-      "change": "−0,20%",
+      "name": "Dow Jones cash · 11:39 ET",
+      "level": "51.918,32",
+      "change": "−1,57%",
       "direction": "down",
       "sources": [
         {
-          "name": "Associated Press · chiusura Wall Street",
-          "url": "https://apnews.com/article/e7325919557efc52535a96f09ab38b0d"
+          "name": "Reuters · Wall Street intraday",
+          "url": "https://www.reuters.com/business/sp-500-nasdaq-futures-inch-up-before-fed-decision-chip-stocks-wobble-2026-07-29/"
         }
       ]
     },
     {
-      "name": "Dow Jones",
-      "level": "52.294,06",
-      "change": "+0,67%",
-      "direction": "up",
+      "name": "S&P 500 cash · 11:39 ET",
+      "level": "7.365,80",
+      "change": "−0,85%",
+      "direction": "down",
       "sources": [
         {
-          "name": "Associated Press · chiusura Wall Street",
-          "url": "https://apnews.com/article/e7325919557efc52535a96f09ab38b0d"
+          "name": "Reuters · Wall Street intraday",
+          "url": "https://www.reuters.com/business/sp-500-nasdaq-futures-inch-up-before-fed-decision-chip-stocks-wobble-2026-07-29/"
         }
       ]
     },
     {
-      "name": "Russell 2000",
-      "level": "intraday",
-      "change": "+1,50%",
-      "direction": "up",
+      "name": "Nasdaq Composite cash · 11:39 ET",
+      "level": "24.595,85",
+      "change": "−1,13%",
+      "direction": "down",
       "sources": [
         {
-          "name": "Associated Press · chiusura Wall Street",
-          "url": "https://apnews.com/article/e7325919557efc52535a96f09ab38b0d"
+          "name": "Reuters · Wall Street intraday",
+          "url": "https://www.reuters.com/business/sp-500-nasdaq-futures-inch-up-before-fed-decision-chip-stocks-wobble-2026-07-29/"
         }
       ]
     },
     {
-      "name": "STOXX 600",
-      "level": "chiusura",
-      "change": "+0,35%",
-      "direction": "up",
+      "name": "Philadelphia Semiconductor Index",
+      "level": "minimo da oltre due mesi",
+      "change": "−3,6%",
+      "direction": "down",
+      "sources": [
+        {
+          "name": "Reuters · semiconduttori",
+          "url": "https://www.reuters.com/business/sp-500-nasdaq-futures-inch-up-before-fed-decision-chip-stocks-wobble-2026-07-29/"
+        }
+      ]
+    },
+    {
+      "name": "STOXX 600 cash · chiusura",
+      "level": "645,01",
+      "change": "−0,3%",
+      "direction": "down",
       "sources": [
         {
           "name": "Reuters · chiusura Europa",
-          "url": "https://www.reuters.com/world/china/european-shares-climb-as-us-iran-peace-optimism-lifts-risk-sentiment-2026-07-27/"
-        }
-      ]
-    },
-    {
-      "name": "DAX",
-      "level": "25.529,87",
-      "change": "+1,72%",
-      "direction": "up",
-      "sources": [
-        {
-          "name": "Reuters · chiusura Europa",
-          "url": "https://www.reuters.com/world/china/european-shares-climb-as-us-iran-peace-optimism-lifts-risk-sentiment-2026-07-27/"
+          "url": "https://www.reuters.com/world/asia-pacific/european-shares-edge-up-commodities-boost-tech-drags-after-sk-hynix-miss-2026-07-29/"
         }
       ]
     }
   ],
   "intermarket": [
     {
-      "name": "Dollar Index",
-      "description": "Il dollaro perde parte della domanda difensiva",
-      "value": "≈101,2",
-      "change": "↓ lieve",
+      "name": "Brent",
+      "description": "Escalation in Medio Oriente e premio inflazionistico in aumento.",
+      "value": "$89,94",
+      "change": "circa +8%",
       "direction": "up",
       "sources": [
         {
-          "name": "Reuters · mercati globali",
-          "url": "https://www.reuters.com/world/china/global-markets-wrapup-1-2026-07-27/"
-        }
-      ]
-    },
-    {
-      "name": "EUR / USD",
-      "description": "L’euro conserva un rialzo modesto",
-      "value": "1,1374",
-      "change": "+0,1%",
-      "direction": "up",
-      "sources": [
-        {
-          "name": "Reuters · mercati globali",
-          "url": "https://www.reuters.com/world/china/global-markets-wrapup-1-2026-07-27/"
+          "name": "Reuters · petrolio",
+          "url": "https://www.reuters.com/business/sp-500-nasdaq-futures-inch-up-before-fed-decision-chip-stocks-wobble-2026-07-29/"
         }
       ]
     },
     {
       "name": "US Treasury 10Y",
-      "description": "Rendimenti più bassi, ma crescita ancora robusta",
-      "value": "4,655%",
-      "change": "−2,4 pb",
+      "description": "Rendimento in rialzo prima del verdetto FOMC.",
+      "value": "4,635%",
+      "change": "+3,1 pb",
       "direction": "up",
       "sources": [
         {
-          "name": "Reuters · mercati globali",
-          "url": "https://www.reuters.com/world/china/global-markets-wrapup-1-2026-07-27/"
+          "name": "WSJ · Treasury yields",
+          "url": "https://www.wsj.com/finance/investing/jgb-futures-edge-higher-amid-mixed-signals-dbce05cd"
         }
       ]
     },
     {
-      "name": "Brent",
-      "description": "Sollievo geopolitico forte",
-      "value": "$90,18",
-      "change": "−6,82%",
+      "name": "US Treasury 2Y",
+      "description": "Scadenza più sensibile alle aspettative sui Fed funds.",
+      "value": "4,318%",
+      "change": "in rialzo",
       "direction": "up",
       "sources": [
         {
-          "name": "Reuters · mercati globali",
-          "url": "https://www.reuters.com/world/china/global-markets-wrapup-1-2026-07-27/"
+          "name": "WSJ · Treasury yields",
+          "url": "https://www.wsj.com/finance/investing/jgb-futures-edge-higher-amid-mixed-signals-dbce05cd"
         }
       ]
     },
     {
-      "name": "WTI",
-      "description": "Minore pressione su inflazione e consumi USA",
-      "value": "$83,66",
-      "change": "−6,35%",
+      "name": "Bund Germania 10Y",
+      "description": "Rendimento europeo spinto dal rialzo globale dell'energia.",
+      "value": "3,122%",
+      "change": "+1,6 pb",
       "direction": "up",
       "sources": [
         {
-          "name": "Reuters · mercati globali",
-          "url": "https://www.reuters.com/world/china/global-markets-wrapup-1-2026-07-27/"
+          "name": "WSJ · rendimenti globali",
+          "url": "https://www.wsj.com/finance/investing/jgb-futures-edge-higher-amid-mixed-signals-dbce05cd"
         }
       ]
     },
     {
-      "name": "Oro spot",
-      "description": "Beneficia di rendimenti più bassi",
-      "value": "$4.069,42",
-      "change": "+0,42%",
-      "direction": "up",
+      "name": "Dollar Index",
+      "description": "Dollaro leggermente più debole prima della Fed.",
+      "value": "variazione",
+      "change": "−0,1%",
+      "direction": "down",
       "sources": [
         {
-          "name": "Reuters · mercati globali",
-          "url": "https://www.reuters.com/world/china/global-markets-wrapup-1-2026-07-27/"
+          "name": "WSJ · dollaro",
+          "url": "https://www.wsj.com/finance/investing/jgb-futures-edge-higher-amid-mixed-signals-dbce05cd"
         }
       ]
     },
     {
       "name": "Bitcoin",
-      "description": "Non conferma il risk-on azionario",
-      "value": "$64.561",
-      "change": "−0,2%",
+      "description": "Prezzo corrente dell'asset digitale.",
+      "value": "$64.120",
+      "change": "+0,86% circa",
       "direction": "up",
       "sources": [
         {
-          "name": "Reuters · mercati globali",
-          "url": "https://www.reuters.com/world/china/global-markets-wrapup-1-2026-07-27/"
-        }
-      ]
-    },
-    {
-      "name": "VIX spot",
-      "description": "Volatilità sotto 18",
-      "value": "17,85",
-      "change": "−0,75 pt",
-      "direction": "up",
-      "sources": [
-        {
-          "name": "Reuters · mercati globali",
-          "url": "https://www.reuters.com/world/china/global-markets-wrapup-1-2026-07-27/"
+          "name": "Google Finance · BTC/USD",
+          "url": "https://www.google.com/finance/quote/BTC-USD"
         }
       ]
     }
   ],
+  "market_monitor": {
+    "title": "Market Monitor",
+    "as_of_date": "2026-07-24",
+    "week_label": "Settimana conclusa il 24 luglio 2026",
+    "methodology": "La tabella usa esclusivamente l'ultima settimana di mercato completa. I valori 1W, 1M e YTD di questa prima integrazione sono stati acquisiti dal prospetto Market Monitor fornito dall'utente e associati a strumenti o proxy trasparenti. 1W confronta la chiusura del 24 luglio con la precedente chiusura settimanale; 1M è rolling; YTD è calcolato rispetto all'ultima chiusura del 2025. Per le obbligazioni i valori rappresentano la performance del proxy obbligazionario, non la variazione del rendimento in punti base.",
+    "sources": [
+      {
+        "name": "Prospetto Market Monitor fornito dall'utente",
+        "url": "/assets/market-monitor-2026-07-24.png"
+      }
+    ],
+    "sections": [
+      {
+        "name": "Azionario",
+        "rows": [
+          {
+            "label": "S&P 500",
+            "instrument": "Indice S&P 500",
+            "one_week": "-0,61%",
+            "one_month": "+0,73%",
+            "ytd": "+8,28%",
+            "one_week_value": -0.61,
+            "one_month_value": 0.73,
+            "ytd_value": 8.28,
+            "sources": [
+              {
+                "name": "Prospetto Market Monitor fornito dall'utente",
+                "url": "/assets/market-monitor-2026-07-24.png"
+              },
+              {
+                "name": "Strumento o proxy: Indice S&P 500",
+                "url": "https://www.google.com/finance/quote/.INX:INDEXSP"
+              }
+            ]
+          },
+          {
+            "label": "Nasdaq 100",
+            "instrument": "Indice Nasdaq 100",
+            "one_week": "-1,62%",
+            "one_month": "-3,74%",
+            "ytd": "+11,40%",
+            "one_week_value": -1.62,
+            "one_month_value": -3.74,
+            "ytd_value": 11.4,
+            "sources": [
+              {
+                "name": "Prospetto Market Monitor fornito dall'utente",
+                "url": "/assets/market-monitor-2026-07-24.png"
+              },
+              {
+                "name": "Strumento o proxy: Indice Nasdaq 100",
+                "url": "https://www.google.com/finance/quote/NDX:INDEXNASDAQ"
+              }
+            ]
+          },
+          {
+            "label": "Europa 50",
+            "instrument": "EURO STOXX 50",
+            "one_week": "+0,80%",
+            "one_month": "+1,07%",
+            "ytd": "+8,36%",
+            "one_week_value": 0.8,
+            "one_month_value": 1.07,
+            "ytd_value": 8.36,
+            "sources": [
+              {
+                "name": "Prospetto Market Monitor fornito dall'utente",
+                "url": "/assets/market-monitor-2026-07-24.png"
+              },
+              {
+                "name": "Strumento o proxy: EURO STOXX 50",
+                "url": "https://www.google.com/finance/quote/SX5E:INDEXSTOXX"
+              }
+            ]
+          },
+          {
+            "label": "Germania",
+            "instrument": "DAX",
+            "one_week": "+1,08%",
+            "one_month": "+1,45%",
+            "ytd": "+2,49%",
+            "one_week_value": 1.08,
+            "one_month_value": 1.45,
+            "ytd_value": 2.49,
+            "sources": [
+              {
+                "name": "Prospetto Market Monitor fornito dall'utente",
+                "url": "/assets/market-monitor-2026-07-24.png"
+              },
+              {
+                "name": "Strumento o proxy: DAX",
+                "url": "https://www.google.com/finance/quote/DAX:INDEXDB"
+              }
+            ]
+          },
+          {
+            "label": "Italia",
+            "instrument": "FTSE MIB",
+            "one_week": "-0,15%",
+            "one_month": "+0,32%",
+            "ytd": "+15,26%",
+            "one_week_value": -0.15,
+            "one_month_value": 0.32,
+            "ytd_value": 15.26,
+            "sources": [
+              {
+                "name": "Prospetto Market Monitor fornito dall'utente",
+                "url": "/assets/market-monitor-2026-07-24.png"
+              },
+              {
+                "name": "Strumento o proxy: FTSE MIB",
+                "url": "https://www.google.com/finance/quote/FTSEMIB:INDEXBIT"
+              }
+            ]
+          },
+          {
+            "label": "Mondo",
+            "instrument": "ETF ACWI",
+            "one_week": "-0,15%",
+            "one_month": "+0,70%",
+            "ytd": "+8,76%",
+            "one_week_value": -0.15,
+            "one_month_value": 0.7,
+            "ytd_value": 8.76,
+            "sources": [
+              {
+                "name": "Prospetto Market Monitor fornito dall'utente",
+                "url": "/assets/market-monitor-2026-07-24.png"
+              },
+              {
+                "name": "Strumento o proxy: ETF ACWI",
+                "url": "https://www.google.com/finance/quote/ACWI:NASDAQ"
+              }
+            ]
+          },
+          {
+            "label": "Emergenti",
+            "instrument": "ETF EEM",
+            "one_week": "+0,75%",
+            "one_month": "-5,23%",
+            "ytd": "+15,71%",
+            "one_week_value": 0.75,
+            "one_month_value": -5.23,
+            "ytd_value": 15.71,
+            "sources": [
+              {
+                "name": "Prospetto Market Monitor fornito dall'utente",
+                "url": "/assets/market-monitor-2026-07-24.png"
+              },
+              {
+                "name": "Strumento o proxy: ETF EEM",
+                "url": "https://www.google.com/finance/quote/EEM:NYSEARCA"
+              }
+            ]
+          },
+          {
+            "label": "Cina",
+            "instrument": "ETF MCHI",
+            "one_week": "0,00%",
+            "one_month": "-8,37%",
+            "ytd": "-2,18%",
+            "one_week_value": 0.0,
+            "one_month_value": -8.37,
+            "ytd_value": -2.18,
+            "sources": [
+              {
+                "name": "Prospetto Market Monitor fornito dall'utente",
+                "url": "/assets/market-monitor-2026-07-24.png"
+              },
+              {
+                "name": "Strumento o proxy: ETF MCHI",
+                "url": "https://www.google.com/finance/quote/MCHI:NASDAQ"
+              }
+            ]
+          },
+          {
+            "label": "Giappone",
+            "instrument": "ETF EWJ",
+            "one_week": "+2,35%",
+            "one_month": "+1,20%",
+            "ytd": "+16,31%",
+            "one_week_value": 2.35,
+            "one_month_value": 1.2,
+            "ytd_value": 16.31,
+            "sources": [
+              {
+                "name": "Prospetto Market Monitor fornito dall'utente",
+                "url": "/assets/market-monitor-2026-07-24.png"
+              },
+              {
+                "name": "Strumento o proxy: ETF EWJ",
+                "url": "https://www.google.com/finance/quote/EWJ:NYSEARCA"
+              }
+            ]
+          },
+          {
+            "label": "Value",
+            "instrument": "ETF VLUE",
+            "one_week": "+2,10%",
+            "one_month": "-0,67%",
+            "ytd": "+30,13%",
+            "one_week_value": 2.1,
+            "one_month_value": -0.67,
+            "ytd_value": 30.13,
+            "sources": [
+              {
+                "name": "Prospetto Market Monitor fornito dall'utente",
+                "url": "/assets/market-monitor-2026-07-24.png"
+              },
+              {
+                "name": "Strumento o proxy: ETF VLUE",
+                "url": "https://www.google.com/finance/quote/VLUE:BATS"
+              }
+            ]
+          },
+          {
+            "label": "Momentum",
+            "instrument": "ETF MTUM",
+            "one_week": "+2,62%",
+            "one_month": "-3,99%",
+            "ytd": "+18,12%",
+            "one_week_value": 2.62,
+            "one_month_value": -3.99,
+            "ytd_value": 18.12,
+            "sources": [
+              {
+                "name": "Prospetto Market Monitor fornito dall'utente",
+                "url": "/assets/market-monitor-2026-07-24.png"
+              },
+              {
+                "name": "Strumento o proxy: ETF MTUM",
+                "url": "https://www.google.com/finance/quote/MTUM:BATS"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Obbligazionario",
+        "rows": [
+          {
+            "label": "Treasury 2Y",
+            "instrument": "ETF SHY",
+            "one_week": "-0,22%",
+            "one_month": "+0,03%",
+            "ytd": "+0,51%",
+            "one_week_value": -0.22,
+            "one_month_value": 0.03,
+            "ytd_value": 0.51,
+            "sources": [
+              {
+                "name": "Prospetto Market Monitor fornito dall'utente",
+                "url": "/assets/market-monitor-2026-07-24.png"
+              },
+              {
+                "name": "Strumento o proxy: ETF SHY",
+                "url": "https://www.google.com/finance/quote/SHY:NASDAQ"
+              }
+            ]
+          },
+          {
+            "label": "Treasury 10Y",
+            "instrument": "ETF IEF",
+            "one_week": "-0,89%",
+            "one_month": "-1,62%",
+            "ytd": "-1,66%",
+            "one_week_value": -0.89,
+            "one_month_value": -1.62,
+            "ytd_value": -1.66,
+            "sources": [
+              {
+                "name": "Prospetto Market Monitor fornito dall'utente",
+                "url": "/assets/market-monitor-2026-07-24.png"
+              },
+              {
+                "name": "Strumento o proxy: ETF IEF",
+                "url": "https://www.google.com/finance/quote/IEF:NASDAQ"
+              }
+            ]
+          },
+          {
+            "label": "Euro 2Y",
+            "instrument": "iShares € Govt Bond 1-3yr UCITS ETF",
+            "one_week": "0,00%",
+            "one_month": "-0,20%",
+            "ytd": "+0,25%",
+            "one_week_value": 0.0,
+            "one_month_value": -0.2,
+            "ytd_value": 0.25,
+            "sources": [
+              {
+                "name": "Prospetto Market Monitor fornito dall'utente",
+                "url": "/assets/market-monitor-2026-07-24.png"
+              },
+              {
+                "name": "Strumento o proxy: iShares € Govt Bond 1-3yr UCITS ETF",
+                "url": "https://www.ishares.com/uk/individual/en/products/251733/ishares-euro-government-bond-13yr-ucits-etf"
+              }
+            ]
+          },
+          {
+            "label": "Euro 10Y",
+            "instrument": "iShares € Govt Bond 7-10yr UCITS ETF",
+            "one_week": "-0,36%",
+            "one_month": "-2,03%",
+            "ytd": "-0,76%",
+            "one_week_value": -0.36,
+            "one_month_value": -2.03,
+            "ytd_value": -0.76,
+            "sources": [
+              {
+                "name": "Prospetto Market Monitor fornito dall'utente",
+                "url": "/assets/market-monitor-2026-07-24.png"
+              },
+              {
+                "name": "Strumento o proxy: iShares € Govt Bond 7-10yr UCITS ETF",
+                "url": "https://www.ishares.com/it/investitore-privato/it/prodotti/251738/ishares-euro-government-bond-710yr-ucits-etf"
+              }
+            ]
+          },
+          {
+            "label": "BUND 10Y",
+            "instrument": "Proxy governativi euro 7-10 anni",
+            "one_week": "-0,20%",
+            "one_month": "-1,51%",
+            "ytd": "-0,50%",
+            "one_week_value": -0.2,
+            "one_month_value": -1.51,
+            "ytd_value": -0.5,
+            "sources": [
+              {
+                "name": "Prospetto Market Monitor fornito dall'utente",
+                "url": "/assets/market-monitor-2026-07-24.png"
+              },
+              {
+                "name": "Strumento o proxy: Proxy governativi euro 7-10 anni",
+                "url": "https://www.ishares.com/it/investitore-privato/it/prodotti/251738/ishares-euro-government-bond-710yr-ucits-etf"
+              }
+            ]
+          },
+          {
+            "label": "BTP 10Y",
+            "instrument": "iShares Italy Govt Bond UCITS ETF",
+            "one_week": "-0,29%",
+            "one_month": "-2,43%",
+            "ytd": "-1,32%",
+            "one_week_value": -0.29,
+            "one_month_value": -2.43,
+            "ytd_value": -1.32,
+            "sources": [
+              {
+                "name": "Prospetto Market Monitor fornito dall'utente",
+                "url": "/assets/market-monitor-2026-07-24.png"
+              },
+              {
+                "name": "Strumento o proxy: iShares Italy Govt Bond UCITS ETF",
+                "url": "https://www.ishares.com/it/investitore-privato/it/prodotti/251747/ishares-italy-government-bond-ucits-etf"
+              }
+            ]
+          },
+          {
+            "label": "Euro HY",
+            "instrument": "iShares € High Yield Corp Bond UCITS ETF",
+            "one_week": "-0,43%",
+            "one_month": "-0,63%",
+            "ytd": "+0,66%",
+            "one_week_value": -0.43,
+            "one_month_value": -0.63,
+            "ytd_value": 0.66,
+            "sources": [
+              {
+                "name": "Prospetto Market Monitor fornito dall'utente",
+                "url": "/assets/market-monitor-2026-07-24.png"
+              },
+              {
+                "name": "Strumento o proxy: iShares € High Yield Corp Bond UCITS ETF",
+                "url": "https://www.ishares.com/uk/individual/en/products/251843/ishares-euro-high-yield-corporate-bond-ucits-etf"
+              }
+            ]
+          },
+          {
+            "label": "Euro Corp.",
+            "instrument": "iShares Core € Corp Bond UCITS ETF",
+            "one_week": "-0,20%",
+            "one_month": "-0,95%",
+            "ytd": "+0,25%",
+            "one_week_value": -0.2,
+            "one_month_value": -0.95,
+            "ytd_value": 0.25,
+            "sources": [
+              {
+                "name": "Prospetto Market Monitor fornito dall'utente",
+                "url": "/assets/market-monitor-2026-07-24.png"
+              },
+              {
+                "name": "Strumento o proxy: iShares Core € Corp Bond UCITS ETF",
+                "url": "https://www.ishares.com/it/investitore-privato/it/prodotti/251726/ishares-euro-corporate-bond-ucits-etf"
+              }
+            ]
+          },
+          {
+            "label": "Usd HY",
+            "instrument": "ETF HYG",
+            "one_week": "-0,72%",
+            "one_month": "-0,28%",
+            "ytd": "+0,99%",
+            "one_week_value": -0.72,
+            "one_month_value": -0.28,
+            "ytd_value": 0.99,
+            "sources": [
+              {
+                "name": "Prospetto Market Monitor fornito dall'utente",
+                "url": "/assets/market-monitor-2026-07-24.png"
+              },
+              {
+                "name": "Strumento o proxy: ETF HYG",
+                "url": "https://www.google.com/finance/quote/HYG:NYSEARCA"
+              }
+            ]
+          },
+          {
+            "label": "Debito EM",
+            "instrument": "iShares EM Local Govt Bond UCITS ETF",
+            "one_week": "-0,52%",
+            "one_month": "+0,08%",
+            "ytd": "+0,82%",
+            "one_week_value": -0.52,
+            "one_month_value": 0.08,
+            "ytd_value": 0.82,
+            "sources": [
+              {
+                "name": "Prospetto Market Monitor fornito dall'utente",
+                "url": "/assets/market-monitor-2026-07-24.png"
+              },
+              {
+                "name": "Strumento o proxy: iShares EM Local Govt Bond UCITS ETF",
+                "url": "https://www.ishares.com/it/investitore-privato/it/prodotti/251724/ishares-emerging-markets-local-government-bond-ucits-etf"
+              }
+            ]
+          },
+          {
+            "label": "Usd Debito EM",
+            "instrument": "ETF EMB",
+            "one_week": "-1,18%",
+            "one_month": "-1,58%",
+            "ytd": "+0,52%",
+            "one_week_value": -1.18,
+            "one_month_value": -1.58,
+            "ytd_value": 0.52,
+            "sources": [
+              {
+                "name": "Prospetto Market Monitor fornito dall'utente",
+                "url": "/assets/market-monitor-2026-07-24.png"
+              },
+              {
+                "name": "Strumento o proxy: ETF EMB",
+                "url": "https://www.google.com/finance/quote/EMB:NASDAQ"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Materie Prime",
+        "rows": [
+          {
+            "label": "Oro",
+            "instrument": "ETF GLD",
+            "one_week": "+0,88%",
+            "one_month": "+1,34%",
+            "ytd": "-6,32%",
+            "one_week_value": 0.88,
+            "one_month_value": 1.34,
+            "ytd_value": -6.32,
+            "sources": [
+              {
+                "name": "Prospetto Market Monitor fornito dall'utente",
+                "url": "/assets/market-monitor-2026-07-24.png"
+              },
+              {
+                "name": "Strumento o proxy: ETF GLD",
+                "url": "https://www.google.com/finance/quote/GLD:NYSEARCA"
+              }
+            ]
+          },
+          {
+            "label": "Petrolio",
+            "instrument": "ETF Brent BNO",
+            "one_week": "+10,56%",
+            "one_month": "+28,62%",
+            "ytd": "+58,62%",
+            "one_week_value": 10.56,
+            "one_month_value": 28.62,
+            "ytd_value": 58.62,
+            "sources": [
+              {
+                "name": "Prospetto Market Monitor fornito dall'utente",
+                "url": "/assets/market-monitor-2026-07-24.png"
+              },
+              {
+                "name": "Strumento o proxy: ETF Brent BNO",
+                "url": "https://www.google.com/finance/quote/BNO:NYSEARCA"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Crypto",
+        "rows": [
+          {
+            "label": "Bitcoin",
+            "instrument": "BTC/USD",
+            "one_week": "+0,31%",
+            "one_month": "+5,09%",
+            "ytd": "-26,75%",
+            "one_week_value": 0.31,
+            "one_month_value": 5.09,
+            "ytd_value": -26.75,
+            "sources": [
+              {
+                "name": "Prospetto Market Monitor fornito dall'utente",
+                "url": "/assets/market-monitor-2026-07-24.png"
+              },
+              {
+                "name": "Strumento o proxy: BTC/USD",
+                "url": "https://www.google.com/finance/quote/BTC-USD"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Forex",
+        "rows": [
+          {
+            "label": "Eur/Usd",
+            "instrument": "EUR/USD",
+            "one_week": "-0,59%",
+            "one_month": "+0,12%",
+            "ytd": "-3,23%",
+            "one_week_value": -0.59,
+            "one_month_value": 0.12,
+            "ytd_value": -3.23,
+            "sources": [
+              {
+                "name": "Prospetto Market Monitor fornito dall'utente",
+                "url": "/assets/market-monitor-2026-07-24.png"
+              },
+              {
+                "name": "Strumento o proxy: EUR/USD",
+                "url": "https://www.google.com/finance/quote/EUR-USD"
+              }
+            ]
+          },
+          {
+            "label": "Dollar Index",
+            "instrument": "ETF UUP come proxy DXY",
+            "one_week": "+0,67%",
+            "one_month": "-0,18%",
+            "ytd": "+3,21%",
+            "one_week_value": 0.67,
+            "one_month_value": -0.18,
+            "ytd_value": 3.21,
+            "sources": [
+              {
+                "name": "Prospetto Market Monitor fornito dall'utente",
+                "url": "/assets/market-monitor-2026-07-24.png"
+              },
+              {
+                "name": "Strumento o proxy: ETF UUP come proxy DXY",
+                "url": "https://www.google.com/finance/quote/UUP:NYSEARCA"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
   "earnings": [
-    {
-      "ticker": "AZN",
-      "company": "AstraZeneca",
-      "status": "BEAT",
-      "headline_value": "+1,7%",
-      "direction": "up",
-      "summary": "EPS core sopra attese; outlook confermato.",
-      "sources": [
-        {
-          "name": "Investor Relations",
-          "url": "https://www.astrazeneca.com/investor-relations.html"
-        }
-      ]
-    },
-    {
-      "ticker": "BKR",
-      "company": "Baker Hughes",
-      "status": "BEAT",
-      "headline_value": "+8,6%",
-      "direction": "up",
-      "summary": "Utile Q2 sopra attese e ordini record.",
-      "sources": [
-        {
-          "name": "Investor Relations",
-          "url": "https://investors.bakerhughes.com/"
-        }
-      ]
-    },
     {
       "ticker": "MSFT",
       "company": "Microsoft",
-      "status": "ATTESO",
-      "headline_value": "29 LUG",
+      "status": "ATTESO DOPO LA CHIUSURA",
+      "headline_value": "Movimento implicito 6,6%",
       "direction": "neutral",
-      "summary": "Focus: Azure, domanda AI, capex.",
+      "summary": "Le opzioni prezzano circa 190 miliardi di dollari di oscillazione della capitalizzazione. Focus su Azure, adozione AI enterprise, capex e free cash flow.",
       "sources": [
         {
-          "name": "Investor Relations",
-          "url": "https://www.microsoft.com/en-us/Investor"
+          "name": "Reuters · movimento implicito Microsoft",
+          "url": "https://www.reuters.com/business/finance/microsoft-set-190-billion-market-value-swing-after-earnings-results-options-2026-07-29/"
+        },
+        {
+          "name": "Microsoft · data risultati FY26 Q4",
+          "url": "https://news.microsoft.com/source/2026/07/08/microsoft-announces-quarterly-earnings-release-date-68/"
         }
       ]
     },
     {
       "ticker": "META",
       "company": "Meta Platforms",
-      "status": "ATTESO",
-      "headline_value": "29 LUG",
+      "status": "ATTESO DOPO LA CHIUSURA",
+      "headline_value": "Call 16:30 ET",
       "direction": "neutral",
-      "summary": "Focus: advertising, AI e disciplina capex.",
+      "summary": "Focus su advertising, engagement, monetizzazione AI e sostenibilità degli investimenti in infrastrutture.",
       "sources": [
         {
-          "name": "Investor Relations",
-          "url": "https://investor.atmeta.com/"
+          "name": "Meta · Q2 2026 results",
+          "url": "https://investor.atmeta.com/investor-news/press-release-details/2026/Meta-to-Announce-Second-Quarter-2026-Results/default.aspx"
+        }
+      ]
+    },
+    {
+      "ticker": "F",
+      "company": "Ford Motor",
+      "status": "GUIDANCE AL RIALZO",
+      "headline_value": "+4,4% intraday",
+      "direction": "up",
+      "summary": "Ricavi Q2 di 48,3 miliardi di dollari, adjusted EPS di 0,42 dollari e nuovo outlook adjusted EBIT 2026 di 10-11 miliardi.",
+      "sources": [
+        {
+          "name": "Ford · risultati Q2 2026",
+          "url": "https://s205.q4cdn.com/882619693/files/doc_financials/2026/q2/Ford-Motor-Company-Q2-2026-Press-Release.pdf"
+        },
+        {
+          "name": "Reuters · movimento Ford",
+          "url": "https://www.reuters.com/business/sp-500-nasdaq-futures-inch-up-before-fed-decision-chip-stocks-wobble-2026-07-29/"
+        }
+      ]
+    },
+    {
+      "ticker": "000660.KS",
+      "company": "SK Hynix",
+      "status": "UTILE RECORD, MISS SUL CONSENSO",
+      "headline_value": "−9,6% in Corea",
+      "direction": "down",
+      "summary": "Utile operativo di 60,5 trilioni di won contro 64 trilioni attesi; ricavi 79,3 trilioni contro 84 trilioni attesi.",
+      "sources": [
+        {
+          "name": "Reuters · risultati SK Hynix",
+          "url": "https://www.reuters.com/world/asia-pacific/sk-hynix-q2-profit-jumps-557-ai-chip-demand-misses-forecasts-2026-07-28/"
         }
       ]
     }
   ],
   "appointments": [
-    "29 luglio Microsoft, Meta e FOMC",
-    "30 luglio Apple e PCE USA"
+    "29 luglio, 14:00 ET: decisione FOMC",
+    "29 luglio, 14:30 ET: conferenza stampa Fed",
+    "29 luglio, after close: Microsoft e Meta",
+    "30 luglio, 17:00 ET: Amazon e Apple"
+  ],
+  "appointments_sources": [
+    {
+      "name": "Federal Reserve · calendario luglio 2026",
+      "url": "https://www.federalreserve.gov/newsevents/2026-july.htm"
+    },
+    {
+      "name": "Microsoft · data risultati",
+      "url": "https://news.microsoft.com/source/2026/07/08/microsoft-announces-quarterly-earnings-release-date-68/"
+    },
+    {
+      "name": "Meta · data risultati",
+      "url": "https://investor.atmeta.com/investor-news/press-release-details/2026/Meta-to-Announce-Second-Quarter-2026-Results/default.aspx"
+    },
+    {
+      "name": "Amazon · data risultati",
+      "url": "https://ir.aboutamazon.com/news-release/news-release-details/2026/Amazon-com-to-Webcast-Second-Quarter-2026-Financial-Results-Conference-Call/default.aspx"
+    },
+    {
+      "name": "Apple · data risultati",
+      "url": "https://investor.apple.com/investor-relations/default.aspx"
+    }
   ],
   "key_movers": [
     {
-      "ticker": "BKR",
-      "change": "+8,6%",
+      "ticker": "F",
+      "change": "+4,4%",
       "direction": "up",
-      "catalyst": "Utile Q2 sopra le attese e ordini record",
+      "catalyst": "Ford alza l'outlook adjusted EBIT 2026 a 10-11 miliardi di dollari.",
       "sources": [
         {
-          "name": "Associated Press · chiusura Wall Street",
-          "url": "https://apnews.com/article/e7325919557efc52535a96f09ab38b0d"
+          "name": "Reuters · movimento Ford",
+          "url": "https://www.reuters.com/business/sp-500-nasdaq-futures-inch-up-before-fed-decision-chip-stocks-wobble-2026-07-29/"
         },
         {
-          "name": "Reuters · mercati globali",
-          "url": "https://www.reuters.com/world/china/global-markets-wrapup-1-2026-07-27/"
+          "name": "Ford · risultati Q2",
+          "url": "https://s205.q4cdn.com/882619693/files/doc_financials/2026/q2/Ford-Motor-Company-Q2-2026-Press-Release.pdf"
         }
       ]
     },
     {
-      "ticker": "CCL",
-      "change": "+3,6%",
+      "ticker": "KER",
+      "change": "quasi +17%",
       "direction": "up",
-      "catalyst": "Crociere favorite dal crollo del petrolio",
+      "catalyst": "Vendite Gucci Q2 meno deboli delle attese.",
       "sources": [
         {
-          "name": "Associated Press · chiusura Wall Street",
-          "url": "https://apnews.com/article/e7325919557efc52535a96f09ab38b0d"
-        },
-        {
-          "name": "Reuters · mercati globali",
-          "url": "https://www.reuters.com/world/china/global-markets-wrapup-1-2026-07-27/"
+          "name": "Reuters · chiusura Europa",
+          "url": "https://www.reuters.com/world/asia-pacific/european-shares-edge-up-commodities-boost-tech-drags-after-sk-hynix-miss-2026-07-29/"
         }
       ]
     },
     {
-      "ticker": "UAL",
-      "change": "+3,3%",
+      "ticker": "SOPR",
+      "change": "+13,6%",
       "direction": "up",
-      "catalyst": "Minori costi carburante",
+      "catalyst": "Rialzo del target annuale di crescita dei ricavi.",
       "sources": [
         {
-          "name": "Associated Press · chiusura Wall Street",
-          "url": "https://apnews.com/article/e7325919557efc52535a96f09ab38b0d"
-        },
-        {
-          "name": "Reuters · mercati globali",
-          "url": "https://www.reuters.com/world/china/global-markets-wrapup-1-2026-07-27/"
-        }
-      ]
-    },
-    {
-      "ticker": "GOOGL",
-      "change": "+3,0%",
-      "direction": "up",
-      "catalyst": "Communication services guida l’S&P 500",
-      "sources": [
-        {
-          "name": "Associated Press · chiusura Wall Street",
-          "url": "https://apnews.com/article/e7325919557efc52535a96f09ab38b0d"
-        },
-        {
-          "name": "Reuters · mercati globali",
-          "url": "https://www.reuters.com/world/china/global-markets-wrapup-1-2026-07-27/"
+          "name": "Reuters · chiusura Europa",
+          "url": "https://www.reuters.com/world/asia-pacific/european-shares-edge-up-commodities-boost-tech-drags-after-sk-hynix-miss-2026-07-29/"
         }
       ]
     },
     {
       "ticker": "NVDA",
-      "change": "−2,0%",
+      "change": "−2,3%",
       "direction": "down",
-      "catalyst": "Pressione competitiva sul comparto AI",
+      "catalyst": "Nuova pressione sulla filiera AI e sui semiconduttori.",
       "sources": [
         {
-          "name": "Associated Press · chiusura Wall Street",
-          "url": "https://apnews.com/article/e7325919557efc52535a96f09ab38b0d"
-        },
-        {
-          "name": "Reuters · mercati globali",
-          "url": "https://www.reuters.com/world/china/global-markets-wrapup-1-2026-07-27/"
+          "name": "Reuters · Wall Street intraday",
+          "url": "https://www.reuters.com/business/sp-500-nasdaq-futures-inch-up-before-fed-decision-chip-stocks-wobble-2026-07-29/"
         }
       ]
     },
     {
-      "ticker": "OXY",
-      "change": "−2,0%",
+      "ticker": "MU",
+      "change": "−4,6%",
       "direction": "down",
-      "catalyst": "Energia penalizzata dal Brent",
+      "catalyst": "Debolezza del comparto memory dopo il miss di SK Hynix.",
       "sources": [
         {
-          "name": "Associated Press · chiusura Wall Street",
-          "url": "https://apnews.com/article/e7325919557efc52535a96f09ab38b0d"
+          "name": "Reuters · Wall Street intraday",
+          "url": "https://www.reuters.com/business/sp-500-nasdaq-futures-inch-up-before-fed-decision-chip-stocks-wobble-2026-07-29/"
         },
         {
-          "name": "Reuters · mercati globali",
-          "url": "https://www.reuters.com/world/china/global-markets-wrapup-1-2026-07-27/"
+          "name": "Reuters · risultati SK Hynix",
+          "url": "https://www.reuters.com/world/asia-pacific/sk-hynix-q2-profit-jumps-557-ai-chip-demand-misses-forecasts-2026-07-28/"
+        }
+      ]
+    },
+    {
+      "ticker": "VRT",
+      "change": "−13,2%",
+      "direction": "down",
+      "catalyst": "Ricavi trimestrali inferiori alle attese.",
+      "sources": [
+        {
+          "name": "Reuters · Wall Street intraday",
+          "url": "https://www.reuters.com/business/sp-500-nasdaq-futures-inch-up-before-fed-decision-chip-stocks-wobble-2026-07-29/"
+        }
+      ]
+    },
+    {
+      "ticker": "LII",
+      "change": "−20%",
+      "direction": "down",
+      "catalyst": "Riduzione della guidance annuale.",
+      "sources": [
+        {
+          "name": "Reuters · Wall Street intraday",
+          "url": "https://www.reuters.com/business/sp-500-nasdaq-futures-inch-up-before-fed-decision-chip-stocks-wobble-2026-07-29/"
+        }
+      ]
+    },
+    {
+      "ticker": "HRMS",
+      "change": "−11%",
+      "direction": "down",
+      "catalyst": "Crescita in Cina priva di una ripresa strutturale.",
+      "sources": [
+        {
+          "name": "Reuters · chiusura Europa",
+          "url": "https://www.reuters.com/world/asia-pacific/european-shares-edge-up-commodities-boost-tech-drags-after-sk-hynix-miss-2026-07-29/"
         }
       ]
     }
   ],
   "trading_focus": {
-    "headline": "Cosa conta nella seconda parte della seduta",
-    "bull_title": "La breadth riporta in alto gli indici",
+    "headline": "Prima la Fed, poi la selezione post-earnings",
+    "bull_title": "Hold non aggressivo e rendimenti in rientro",
     "bull_conditions": [
-      "S&P recupera almeno +0,3% e Nasdaq torna positivo",
-      "US 10Y rientra sotto 4,65%",
-      "Russell 2000 conserva oltre +1%",
-      "VIX resta sotto 18 e breadth sopra 2:1"
+      "S&P 500 recupera 7.365,80 e torna sopra 7.400",
+      "Nasdaq recupera 24.595,85 con SOX sopra il riferimento −3,6%",
+      "Treasury 10Y scende sotto 4,635%",
+      "Brent torna sotto 89,94 dollari",
+      "Breadth NYSE e Nasdaq migliora sotto 2:1"
     ],
-    "bear_title": "Il gap-and-fade diventa vendita generalizzata",
+    "bear_title": "Fed hawkish e vendita generalizzata",
     "bear_conditions": [
-      "S&P passa stabilmente in negativo",
-      "Breadth NYSE/Nasdaq scende verso 1:1",
-      "US 10Y torna sopra 4,68%",
-      "Brent recupera $92–94 su nuove tensioni"
+      "S&P 500 rompe il livello intraday di 7.365,80",
+      "Nasdaq accelera sotto 24.595,85",
+      "Treasury 10Y consolida sopra 4,635%",
+      "Brent supera 89,94 dollari",
+      "Rapporto ribassi/rialzi resta oltre 2,2:1"
     ],
-    "setup_title": "Forza relativa fuori dal tech più affollato",
-    "setup_summary": "Privilegiare small cap, travel e singoli beat. Sul Nasdaq attendere il ritorno sopra VWAP; evitare short tardivi sull’energia dopo un gap già esteso.",
+    "setup_title": "Relative strength dopo risultati verificabili",
+    "setup_summary": "Dopo la Fed, privilegiare titoli che mantengono i guadagni dopo earnings e guidance. Evitare bottom fishing sui chip finché SOX, Nvidia e Micron non mostrano una stabilizzazione coerente con rendimenti in rientro.",
     "levels": [
-      "S&P 7.400 / 7.435",
-      "Nasdaq 24.850 / 25.000",
-      "Brent $90 / $92",
-      "US 10Y 4,65 / 4,68%",
-      "Breadth e VIX"
+      "S&P 500: 7.365,80 / 7.400",
+      "Nasdaq Composite: 24.595,85",
+      "SOX: variazione −3,6%",
+      "Treasury 10Y: 4,635%",
+      "Brent: 89,94 dollari",
+      "Breadth: 2,22:1 NYSE / 2,32:1 Nasdaq"
     ],
     "sources": [
       {
-        "name": "Associated Press · chiusura Wall Street",
-        "url": "https://apnews.com/article/e7325919557efc52535a96f09ab38b0d"
+        "name": "Reuters · Wall Street intraday e breadth",
+        "url": "https://www.reuters.com/business/sp-500-nasdaq-futures-inch-up-before-fed-decision-chip-stocks-wobble-2026-07-29/"
       },
       {
-        "name": "Reuters · mercati globali",
-        "url": "https://www.reuters.com/world/china/global-markets-wrapup-1-2026-07-27/"
+        "name": "WSJ · Treasury yields",
+        "url": "https://www.wsj.com/finance/investing/jgb-futures-edge-higher-amid-mixed-signals-dbce05cd"
       },
       {
         "name": "Elaborazione Rassegna Finanziaria",
@@ -681,11 +1302,5 @@
       }
     ]
   },
-  "methodology": "Dati verificabili, lettura editoriale. I valori di mercato sono riferiti all’orario indicato. Verificare sempre le fonti originali prima di prendere decisioni operative.",
-  "appointments_sources": [
-    {
-      "name": "Federal Reserve · calendario",
-      "url": "https://www.federalreserve.gov/newsevents/2026-july.htm"
-    }
-  ]
+  "methodology": "Dati verificati il 29 luglio 2026. Wall Street è riferita allo snapshot Reuters delle 11:39 ET; lo STOXX 600 alla chiusura europea; i rendimenti sono quelli riportati dal Wall Street Journal prima del FOMC; Bitcoin è il prezzo corrente della fonte indicata. Il breadth_score, la probabilità complementare di tassi invariati e i livelli del Trading Focus sono elaborazioni editoriali basate sui dati sottostanti. Il Market Monitor usa la settimana conclusa il 24 luglio 2026 e, per questa prima integrazione, importa i valori dal prospetto fornito dall'utente associandoli a proxy dichiarati. Non costituisce una raccomandazione finanziaria."
 }

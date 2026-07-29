@@ -222,3 +222,42 @@ h1{font-size:72px;line-height:.96;margin:12px 0 18px;letter-spacing:-.04em}
 .table-row .data-source,.inter-row .data-source{font-family:Arial,Helvetica,sans-serif}
 .setup .data-source{color:#69d4ca}
 .setup .data-source a{color:#69d4ca}
+
+
+.monitor-intro{padding:20px 22px;display:flex;justify-content:space-between;gap:24px;align-items:flex-start}
+.monitor-intro strong{font-family:Georgia,"Times New Roman",serif;font-size:18px}
+.monitor-intro p{font-size:10px;line-height:1.55;color:#526279;max-width:1050px;margin:7px 0 0}
+.monitor-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:14px;align-items:start}
+.monitor-card{overflow:hidden}
+.monitor-card.monitor-wide{grid-column:span 1}
+.monitor-title{background:#154d9c;color:#fff;padding:11px 13px;font-weight:700;font-size:12px}
+.monitor-head,.monitor-row{display:grid;grid-template-columns:1.55fr repeat(3,.65fr);align-items:stretch}
+.monitor-head{background:#0e3f83;color:#fff;font-size:9px;font-weight:700;text-align:center}
+.monitor-head span{padding:8px 7px;border-left:1px solid rgba(255,255,255,.22)}
+.monitor-head span:first-child{text-align:left;border-left:0}
+.monitor-row{border-top:1px solid var(--line);font-size:10px}
+.monitor-row>div{padding:8px 10px}
+.monitor-row>div strong{display:block;font-size:11px;color:#2d568e}
+.monitor-row>div small{display:block;color:#718093;margin-top:2px;font-size:8px}
+.monitor-row>span{display:grid;place-items:center;text-align:center;padding:8px 5px;border-left:1px solid var(--line);font-weight:700}
+.heat-pos-3{background:#4da968;color:#062c17}
+.heat-pos-2{background:#8bc382;color:#123519}
+.heat-pos-1{background:#c8d895;color:#2e3b18}
+.heat-flat{background:#f0d46d;color:#59430b}
+.heat-neg-1{background:#efb57b;color:#5a2910}
+.heat-neg-2{background:#e98774;color:#5a1611}
+.heat-neg-3{background:#d95a57;color:#fff}
+@media(min-width:1200px){
+  .monitor-grid{grid-template-columns:1.15fr 1.15fr .8fr}
+  .monitor-card:nth-child(1){grid-row:span 3}
+  .monitor-card:nth-child(2){grid-row:span 3}
+}
+@media(max-width:1100px){
+  .monitor-grid{grid-template-columns:1fr 1fr}
+}
+@media(max-width:760px){
+  .monitor-grid{grid-template-columns:1fr}
+  .monitor-intro{flex-direction:column}
+  .monitor-head,.monitor-row{grid-template-columns:1.35fr repeat(3,.65fr)}
+  .monitor-row>div strong{font-size:10px}
+}

@@ -14,6 +14,26 @@ const spark = values => {
   return `<svg viewBox="0 0 200 30"><polyline points="${points}" fill="none" stroke="#009b8b" stroke-width="2"/></svg>`;
 };
 const list = arr => (arr || []).map(x => `<li>${esc(x)}</li>`).join('');
+const heatClass = value => {
+  const v = Number(value || 0);
+  if(v >= 5) return 'heat-pos-3';
+  if(v >= 1) return 'heat-pos-2';
+  if(v > 0.15) return 'heat-pos-1';
+  if(v <= -5) return 'heat-neg-3';
+  if(v <= -1) return 'heat-neg-2';
+  if(v < -0.15) return 'heat-neg-1';
+  return 'heat-flat';
+};
+const monitorTable = section => `<article class="card monitor-card ${section.rows.length > 5 ? 'monitor-wide' : ''}">
+  <div class="monitor-title">${esc(section.name)}</div>
+  <div class="monitor-head"><span>Strumento</span><span>1W</span><span>1M</span><span>YTD</span></div>
+  ${(section.rows||[]).map(row=>`<div class="monitor-row">
+    <div><strong>${esc(row.label)}</strong><small>${esc(row.instrument)}</small>${sourceLine(row.sources)}</div>
+    <span class="${heatClass(row.one_week_value)}">${esc(row.one_week)}</span>
+    <span class="${heatClass(row.one_month_value)}">${esc(row.one_month)}</span>
+    <span class="${heatClass(row.ytd_value)}">${esc(row.ytd)}</span>
+  </div>`).join('')}
+</article>`;
 const metricRows = arr => (arr || []).map(x => `<div class="metric-row"><span>${esc(x.label)}${sourceLine(x.sources)}</span><strong>${esc(x.value)}</strong></div>`).join('');
 
 async function loadEdition(){
@@ -99,19 +119,25 @@ function render(d){
     <div class="card inter-list">${(d.intermarket||[]).map((x,i)=>`<div class="inter-row"><div class="idx">${String(i+1).padStart(2,'0')}</div><div><div class="instrument">${esc(x.name)}</div><div class="desc">${esc(x.description)}</div>${sourceLine(x.sources)}</div><div class="value">${esc(x.value)}</div><div class="${cls(x.direction)}">${esc(x.change)}</div></div>`).join('')}</div>
   </section>
 
+  <section id="monitor" class="section">
+    <div class="section-head"><div><div class="eyebrow">05 · Weekly Market Monitor</div><h2>${esc(d.market_monitor.title)}</h2></div><em>${esc(d.market_monitor.week_label)}</em></div>
+    <div class="card monitor-intro"><div><strong>${esc(d.market_monitor.week_label)}</strong><p>${esc(d.market_monitor.methodology)}</p></div>${sourceLine(d.market_monitor.sources)}</div>
+    <div class="monitor-grid">${(d.market_monitor.sections||[]).map(monitorTable).join('')}</div>
+  </section>
+
   <section id="earnings" class="section">
-    <div class="section-head"><div><div class="eyebrow">05 · Earnings Watch</div><h2>Trimestrali e guidance da monitorare</h2></div></div>
+    <div class="section-head"><div><div class="eyebrow">06 · Earnings Watch</div><h2>Trimestrali e guidance da monitorare</h2></div></div>
     <div class="earnings-grid">${(d.earnings||[]).map(e=>`<article class="card earning"><div><div class="ticker-symbol">${esc(e.ticker)} <small style="font-family:Arial;font-size:11px">${esc(e.company)}</small></div><div class="source">${esc(e.status)} · ${sourceLinks(e.sources)}</div></div><div><div class="move ${cls(e.direction)}">${esc(e.headline_value)}</div><p style="font-size:10px">${esc(e.summary)}</p></div></article>`).join('')}</div>
     <div class="appointments"><b style="color:var(--amber);letter-spacing:.15em;margin-right:20px">PROSSIMI APPUNTAMENTI</b>${(d.appointments||[]).map(esc).join(' · ')}${sourceLine(d.appointments_sources)}</div>
   </section>
 
   <section id="movers" class="section">
-    <div class="section-head"><div><div class="eyebrow">06 · Key Movers</div><h2>Titoli e catalyst della seduta</h2></div></div>
+    <div class="section-head"><div><div class="eyebrow">07 · Key Movers</div><h2>Titoli e catalyst della seduta</h2></div></div>
     <div class="card table"><div class="table-header"><div>Ticker</div><div>Movimento</div><div>Catalyst</div></div>${(d.key_movers||[]).map(x=>`<div class="table-row"><div class="name">${esc(x.ticker)}</div><div class="${cls(x.direction)}">${esc(x.change)}</div><div>${esc(x.catalyst)}${sourceLine(x.sources)}</div></div>`).join('')}</div>
   </section>
 
   <section id="focus" class="section">
-    <div class="section-head"><div><div class="eyebrow">07 · Trading Focus</div><h2>${esc(f.headline)}</h2></div><em>Playbook intraday</em></div>
+    <div class="section-head"><div><div class="eyebrow">08 · Trading Focus</div><h2>${esc(f.headline)}</h2></div><em>Playbook intraday</em></div>
     <div class="focus-grid"><article class="card scenario bull"><div class="eyebrow">Scenario rialzista</div><h3>${esc(f.bull_title)}</h3><ul class="checklist">${list(f.bull_conditions)}</ul></article><article class="card scenario bear"><div class="eyebrow" style="color:var(--red)">Scenario ribassista</div><h3>${esc(f.bear_title)}</h3><ul class="checklist">${list(f.bear_conditions)}</ul></article></div>
     <div class="card setup"><div><div class="eyebrow" style="color:#efad49">Setup preferito</div><h3>${esc(f.setup_title)}</h3><p>${esc(f.setup_summary)}</p>${sourceLine(f.sources)}</div><div class="levels">${(f.levels||[]).map((x,i)=>`<div class="level">${String(i+1).padStart(2,'0')} &nbsp; ${esc(x)}</div>`).join('')}</div></div>
     <div class="card method" id="metodologia"><div><div class="eyebrow">Fonti &amp; metodologia</div><h3>Dati verificabili, lettura editoriale</h3><p>${esc(d.methodology)}</p></div></div>

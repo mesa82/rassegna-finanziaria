@@ -151,3 +151,16 @@ td:first-child{font-family:Georgia,"Times New Roman",serif;font-size:9.5pt}
 .lead-stat .sources,.setup .sources{color:#83ddd5}
 .lead-stat .sources a,.setup .sources a{color:#83ddd5}
 .metric .sources{margin-top:.8mm}
+
+.monitor-print-grid{display:grid;grid-template-columns:1fr 1fr;gap:4mm;margin-top:4mm}
+.monitor-print-block{break-inside:avoid}
+.monitor-print-block h3{font:400 12pt Georgia,"Times New Roman",serif;margin:0 0 2mm}
+.monitor-print-table{font-size:7pt;margin-bottom:1mm}
+.monitor-print-table td,.monitor-print-table th{padding:1.8mm}
+.monitor-print-table td:first-child{font-family:Arial,Helvetica,sans-serif;font-size:7.5pt}
+.monitor-print-table td small{display:block;font-size:5.8pt;color:var(--muted)}
+.heat-pos-3{background:#4da968;color:#062c17}.heat-pos-2{background:#8bc382;color:#123519}
+.heat-pos-1{background:#c8d895;color:#2e3b18}.heat-flat{background:#f0d46d;color:#59430b}
+.heat-neg-1{background:#efb57b;color:#5a2910}.heat-neg-2{background:#e98774;color:#5a1611}
+.heat-neg-3{background:#d95a57;color:#fff}
+@media print{.monitor-print-grid{grid-template-columns:1fr 1fr}}

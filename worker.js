@@ -23,6 +23,7 @@ function validateEdition(edition) {
     "indices_summary",
     "indices",
     "intermarket",
+    "market_monitor",
     "earnings",
     "appointments",
     "key_movers",
@@ -58,6 +59,7 @@ function validateEdition(edition) {
     "catalysts",
     "indices",
     "intermarket",
+    "market_monitor",
     "earnings",
     "appointments",
     "key_movers",
@@ -131,6 +133,19 @@ function validateEdition(edition) {
   edition.key_movers.forEach((item, index) =>
     requireSources(item.sources, `key_movers[${index}]`)
   );
+
+  if (!edition.market_monitor || !Array.isArray(edition.market_monitor.sections)) {
+    throw new Error("market_monitor incompleto.");
+  }
+  requireSources(edition.market_monitor.sources, "Market Monitor settimanale");
+  edition.market_monitor.sections.forEach((section, sectionIndex) => {
+    if (!Array.isArray(section.rows)) {
+      throw new Error(`market_monitor.sections[${sectionIndex}].rows deve essere un array.`);
+    }
+    section.rows.forEach((row, rowIndex) =>
+      requireSources(row.sources, `market_monitor.sections[${sectionIndex}].rows[${rowIndex}]`)
+    );
+  });
 
   requireSources(edition.trading_focus.sources, "livelli operativi e Trading Focus");
 
