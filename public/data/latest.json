@@ -484,13 +484,8 @@
     "title": "Market Monitor",
     "as_of_date": "2026-07-24",
     "week_label": "Settimana conclusa il 24 luglio 2026",
-    "methodology": "La tabella usa esclusivamente l'ultima settimana di mercato completa. I valori 1W, 1M e YTD di questa prima integrazione sono stati acquisiti dal prospetto Market Monitor fornito dall'utente e associati a strumenti o proxy trasparenti. 1W confronta la chiusura del 24 luglio con la precedente chiusura settimanale; 1M è rolling; YTD è calcolato rispetto all'ultima chiusura del 2025. Per le obbligazioni i valori rappresentano la performance del proxy obbligazionario, non la variazione del rendimento in punti base.",
-    "sources": [
-      {
-        "name": "Prospetto Market Monitor fornito dall'utente",
-        "url": "/assets/market-monitor-2026-07-24.png"
-      }
-    ],
+    "methodology": "Il prospetto grafico fornito dall'utente è usato esclusivamente come riferimento di layout e non come fonte dati. Per questa edizione non sono disponibili serie storiche complete, attendibili e verificate per calcolare in modo coerente 1W, 1M e YTD su tutti gli strumenti e proxy: i valori sono pertanto indicati come ND. Le edizioni successive useranno soltanto fonti pubbliche verificabili; quando una singola misura non sarà verificabile, il relativo campo resterà ND.",
+    "sources": [],
     "sections": [
       {
         "name": "Azionario",
@@ -498,222 +493,123 @@
           {
             "label": "S&P 500",
             "instrument": "Indice S&P 500",
-            "one_week": "-0,61%",
-            "one_month": "+0,73%",
-            "ytd": "+8,28%",
-            "one_week_value": -0.61,
-            "one_month_value": 0.73,
-            "ytd_value": 8.28,
-            "sources": [
-              {
-                "name": "Prospetto Market Monitor fornito dall'utente",
-                "url": "/assets/market-monitor-2026-07-24.png"
-              },
-              {
-                "name": "Strumento o proxy: Indice S&P 500",
-                "url": "https://www.google.com/finance/quote/.INX:INDEXSP"
-              }
-            ]
+            "one_week": "ND",
+            "one_month": "ND",
+            "ytd": "ND",
+            "one_week_value": null,
+            "one_month_value": null,
+            "ytd_value": null,
+            "sources": []
           },
           {
             "label": "Nasdaq 100",
             "instrument": "Indice Nasdaq 100",
-            "one_week": "-1,62%",
-            "one_month": "-3,74%",
-            "ytd": "+11,40%",
-            "one_week_value": -1.62,
-            "one_month_value": -3.74,
-            "ytd_value": 11.4,
-            "sources": [
-              {
-                "name": "Prospetto Market Monitor fornito dall'utente",
-                "url": "/assets/market-monitor-2026-07-24.png"
-              },
-              {
-                "name": "Strumento o proxy: Indice Nasdaq 100",
-                "url": "https://www.google.com/finance/quote/NDX:INDEXNASDAQ"
-              }
-            ]
+            "one_week": "ND",
+            "one_month": "ND",
+            "ytd": "ND",
+            "one_week_value": null,
+            "one_month_value": null,
+            "ytd_value": null,
+            "sources": []
           },
           {
             "label": "Europa 50",
             "instrument": "EURO STOXX 50",
-            "one_week": "+0,80%",
-            "one_month": "+1,07%",
-            "ytd": "+8,36%",
-            "one_week_value": 0.8,
-            "one_month_value": 1.07,
-            "ytd_value": 8.36,
-            "sources": [
-              {
-                "name": "Prospetto Market Monitor fornito dall'utente",
-                "url": "/assets/market-monitor-2026-07-24.png"
-              },
-              {
-                "name": "Strumento o proxy: EURO STOXX 50",
-                "url": "https://www.google.com/finance/quote/SX5E:INDEXSTOXX"
-              }
-            ]
+            "one_week": "ND",
+            "one_month": "ND",
+            "ytd": "ND",
+            "one_week_value": null,
+            "one_month_value": null,
+            "ytd_value": null,
+            "sources": []
           },
           {
             "label": "Germania",
             "instrument": "DAX",
-            "one_week": "+1,08%",
-            "one_month": "+1,45%",
-            "ytd": "+2,49%",
-            "one_week_value": 1.08,
-            "one_month_value": 1.45,
-            "ytd_value": 2.49,
-            "sources": [
-              {
-                "name": "Prospetto Market Monitor fornito dall'utente",
-                "url": "/assets/market-monitor-2026-07-24.png"
-              },
-              {
-                "name": "Strumento o proxy: DAX",
-                "url": "https://www.google.com/finance/quote/DAX:INDEXDB"
-              }
-            ]
+            "one_week": "ND",
+            "one_month": "ND",
+            "ytd": "ND",
+            "one_week_value": null,
+            "one_month_value": null,
+            "ytd_value": null,
+            "sources": []
           },
           {
             "label": "Italia",
             "instrument": "FTSE MIB",
-            "one_week": "-0,15%",
-            "one_month": "+0,32%",
-            "ytd": "+15,26%",
-            "one_week_value": -0.15,
-            "one_month_value": 0.32,
-            "ytd_value": 15.26,
-            "sources": [
-              {
-                "name": "Prospetto Market Monitor fornito dall'utente",
-                "url": "/assets/market-monitor-2026-07-24.png"
-              },
-              {
-                "name": "Strumento o proxy: FTSE MIB",
-                "url": "https://www.google.com/finance/quote/FTSEMIB:INDEXBIT"
-              }
-            ]
+            "one_week": "ND",
+            "one_month": "ND",
+            "ytd": "ND",
+            "one_week_value": null,
+            "one_month_value": null,
+            "ytd_value": null,
+            "sources": []
           },
           {
             "label": "Mondo",
             "instrument": "ETF ACWI",
-            "one_week": "-0,15%",
-            "one_month": "+0,70%",
-            "ytd": "+8,76%",
-            "one_week_value": -0.15,
-            "one_month_value": 0.7,
-            "ytd_value": 8.76,
-            "sources": [
-              {
-                "name": "Prospetto Market Monitor fornito dall'utente",
-                "url": "/assets/market-monitor-2026-07-24.png"
-              },
-              {
-                "name": "Strumento o proxy: ETF ACWI",
-                "url": "https://www.google.com/finance/quote/ACWI:NASDAQ"
-              }
-            ]
+            "one_week": "ND",
+            "one_month": "ND",
+            "ytd": "ND",
+            "one_week_value": null,
+            "one_month_value": null,
+            "ytd_value": null,
+            "sources": []
           },
           {
             "label": "Emergenti",
             "instrument": "ETF EEM",
-            "one_week": "+0,75%",
-            "one_month": "-5,23%",
-            "ytd": "+15,71%",
-            "one_week_value": 0.75,
-            "one_month_value": -5.23,
-            "ytd_value": 15.71,
-            "sources": [
-              {
-                "name": "Prospetto Market Monitor fornito dall'utente",
-                "url": "/assets/market-monitor-2026-07-24.png"
-              },
-              {
-                "name": "Strumento o proxy: ETF EEM",
-                "url": "https://www.google.com/finance/quote/EEM:NYSEARCA"
-              }
-            ]
+            "one_week": "ND",
+            "one_month": "ND",
+            "ytd": "ND",
+            "one_week_value": null,
+            "one_month_value": null,
+            "ytd_value": null,
+            "sources": []
           },
           {
             "label": "Cina",
             "instrument": "ETF MCHI",
-            "one_week": "0,00%",
-            "one_month": "-8,37%",
-            "ytd": "-2,18%",
-            "one_week_value": 0.0,
-            "one_month_value": -8.37,
-            "ytd_value": -2.18,
-            "sources": [
-              {
-                "name": "Prospetto Market Monitor fornito dall'utente",
-                "url": "/assets/market-monitor-2026-07-24.png"
-              },
-              {
-                "name": "Strumento o proxy: ETF MCHI",
-                "url": "https://www.google.com/finance/quote/MCHI:NASDAQ"
-              }
-            ]
+            "one_week": "ND",
+            "one_month": "ND",
+            "ytd": "ND",
+            "one_week_value": null,
+            "one_month_value": null,
+            "ytd_value": null,
+            "sources": []
           },
           {
             "label": "Giappone",
             "instrument": "ETF EWJ",
-            "one_week": "+2,35%",
-            "one_month": "+1,20%",
-            "ytd": "+16,31%",
-            "one_week_value": 2.35,
-            "one_month_value": 1.2,
-            "ytd_value": 16.31,
-            "sources": [
-              {
-                "name": "Prospetto Market Monitor fornito dall'utente",
-                "url": "/assets/market-monitor-2026-07-24.png"
-              },
-              {
-                "name": "Strumento o proxy: ETF EWJ",
-                "url": "https://www.google.com/finance/quote/EWJ:NYSEARCA"
-              }
-            ]
+            "one_week": "ND",
+            "one_month": "ND",
+            "ytd": "ND",
+            "one_week_value": null,
+            "one_month_value": null,
+            "ytd_value": null,
+            "sources": []
           },
           {
             "label": "Value",
             "instrument": "ETF VLUE",
-            "one_week": "+2,10%",
-            "one_month": "-0,67%",
-            "ytd": "+30,13%",
-            "one_week_value": 2.1,
-            "one_month_value": -0.67,
-            "ytd_value": 30.13,
-            "sources": [
-              {
-                "name": "Prospetto Market Monitor fornito dall'utente",
-                "url": "/assets/market-monitor-2026-07-24.png"
-              },
-              {
-                "name": "Strumento o proxy: ETF VLUE",
-                "url": "https://www.google.com/finance/quote/VLUE:BATS"
-              }
-            ]
+            "one_week": "ND",
+            "one_month": "ND",
+            "ytd": "ND",
+            "one_week_value": null,
+            "one_month_value": null,
+            "ytd_value": null,
+            "sources": []
           },
           {
             "label": "Momentum",
             "instrument": "ETF MTUM",
-            "one_week": "+2,62%",
-            "one_month": "-3,99%",
-            "ytd": "+18,12%",
-            "one_week_value": 2.62,
-            "one_month_value": -3.99,
-            "ytd_value": 18.12,
-            "sources": [
-              {
-                "name": "Prospetto Market Monitor fornito dall'utente",
-                "url": "/assets/market-monitor-2026-07-24.png"
-              },
-              {
-                "name": "Strumento o proxy: ETF MTUM",
-                "url": "https://www.google.com/finance/quote/MTUM:BATS"
-              }
-            ]
+            "one_week": "ND",
+            "one_month": "ND",
+            "ytd": "ND",
+            "one_week_value": null,
+            "one_month_value": null,
+            "ytd_value": null,
+            "sources": []
           }
         ]
       },
@@ -723,222 +619,123 @@
           {
             "label": "Treasury 2Y",
             "instrument": "ETF SHY",
-            "one_week": "-0,22%",
-            "one_month": "+0,03%",
-            "ytd": "+0,51%",
-            "one_week_value": -0.22,
-            "one_month_value": 0.03,
-            "ytd_value": 0.51,
-            "sources": [
-              {
-                "name": "Prospetto Market Monitor fornito dall'utente",
-                "url": "/assets/market-monitor-2026-07-24.png"
-              },
-              {
-                "name": "Strumento o proxy: ETF SHY",
-                "url": "https://www.google.com/finance/quote/SHY:NASDAQ"
-              }
-            ]
+            "one_week": "ND",
+            "one_month": "ND",
+            "ytd": "ND",
+            "one_week_value": null,
+            "one_month_value": null,
+            "ytd_value": null,
+            "sources": []
           },
           {
             "label": "Treasury 10Y",
             "instrument": "ETF IEF",
-            "one_week": "-0,89%",
-            "one_month": "-1,62%",
-            "ytd": "-1,66%",
-            "one_week_value": -0.89,
-            "one_month_value": -1.62,
-            "ytd_value": -1.66,
-            "sources": [
-              {
-                "name": "Prospetto Market Monitor fornito dall'utente",
-                "url": "/assets/market-monitor-2026-07-24.png"
-              },
-              {
-                "name": "Strumento o proxy: ETF IEF",
-                "url": "https://www.google.com/finance/quote/IEF:NASDAQ"
-              }
-            ]
+            "one_week": "ND",
+            "one_month": "ND",
+            "ytd": "ND",
+            "one_week_value": null,
+            "one_month_value": null,
+            "ytd_value": null,
+            "sources": []
           },
           {
             "label": "Euro 2Y",
             "instrument": "iShares € Govt Bond 1-3yr UCITS ETF",
-            "one_week": "0,00%",
-            "one_month": "-0,20%",
-            "ytd": "+0,25%",
-            "one_week_value": 0.0,
-            "one_month_value": -0.2,
-            "ytd_value": 0.25,
-            "sources": [
-              {
-                "name": "Prospetto Market Monitor fornito dall'utente",
-                "url": "/assets/market-monitor-2026-07-24.png"
-              },
-              {
-                "name": "Strumento o proxy: iShares € Govt Bond 1-3yr UCITS ETF",
-                "url": "https://www.ishares.com/uk/individual/en/products/251733/ishares-euro-government-bond-13yr-ucits-etf"
-              }
-            ]
+            "one_week": "ND",
+            "one_month": "ND",
+            "ytd": "ND",
+            "one_week_value": null,
+            "one_month_value": null,
+            "ytd_value": null,
+            "sources": []
           },
           {
             "label": "Euro 10Y",
             "instrument": "iShares € Govt Bond 7-10yr UCITS ETF",
-            "one_week": "-0,36%",
-            "one_month": "-2,03%",
-            "ytd": "-0,76%",
-            "one_week_value": -0.36,
-            "one_month_value": -2.03,
-            "ytd_value": -0.76,
-            "sources": [
-              {
-                "name": "Prospetto Market Monitor fornito dall'utente",
-                "url": "/assets/market-monitor-2026-07-24.png"
-              },
-              {
-                "name": "Strumento o proxy: iShares € Govt Bond 7-10yr UCITS ETF",
-                "url": "https://www.ishares.com/it/investitore-privato/it/prodotti/251738/ishares-euro-government-bond-710yr-ucits-etf"
-              }
-            ]
+            "one_week": "ND",
+            "one_month": "ND",
+            "ytd": "ND",
+            "one_week_value": null,
+            "one_month_value": null,
+            "ytd_value": null,
+            "sources": []
           },
           {
             "label": "BUND 10Y",
             "instrument": "Proxy governativi euro 7-10 anni",
-            "one_week": "-0,20%",
-            "one_month": "-1,51%",
-            "ytd": "-0,50%",
-            "one_week_value": -0.2,
-            "one_month_value": -1.51,
-            "ytd_value": -0.5,
-            "sources": [
-              {
-                "name": "Prospetto Market Monitor fornito dall'utente",
-                "url": "/assets/market-monitor-2026-07-24.png"
-              },
-              {
-                "name": "Strumento o proxy: Proxy governativi euro 7-10 anni",
-                "url": "https://www.ishares.com/it/investitore-privato/it/prodotti/251738/ishares-euro-government-bond-710yr-ucits-etf"
-              }
-            ]
+            "one_week": "ND",
+            "one_month": "ND",
+            "ytd": "ND",
+            "one_week_value": null,
+            "one_month_value": null,
+            "ytd_value": null,
+            "sources": []
           },
           {
             "label": "BTP 10Y",
             "instrument": "iShares Italy Govt Bond UCITS ETF",
-            "one_week": "-0,29%",
-            "one_month": "-2,43%",
-            "ytd": "-1,32%",
-            "one_week_value": -0.29,
-            "one_month_value": -2.43,
-            "ytd_value": -1.32,
-            "sources": [
-              {
-                "name": "Prospetto Market Monitor fornito dall'utente",
-                "url": "/assets/market-monitor-2026-07-24.png"
-              },
-              {
-                "name": "Strumento o proxy: iShares Italy Govt Bond UCITS ETF",
-                "url": "https://www.ishares.com/it/investitore-privato/it/prodotti/251747/ishares-italy-government-bond-ucits-etf"
-              }
-            ]
+            "one_week": "ND",
+            "one_month": "ND",
+            "ytd": "ND",
+            "one_week_value": null,
+            "one_month_value": null,
+            "ytd_value": null,
+            "sources": []
           },
           {
             "label": "Euro HY",
             "instrument": "iShares € High Yield Corp Bond UCITS ETF",
-            "one_week": "-0,43%",
-            "one_month": "-0,63%",
-            "ytd": "+0,66%",
-            "one_week_value": -0.43,
-            "one_month_value": -0.63,
-            "ytd_value": 0.66,
-            "sources": [
-              {
-                "name": "Prospetto Market Monitor fornito dall'utente",
-                "url": "/assets/market-monitor-2026-07-24.png"
-              },
-              {
-                "name": "Strumento o proxy: iShares € High Yield Corp Bond UCITS ETF",
-                "url": "https://www.ishares.com/uk/individual/en/products/251843/ishares-euro-high-yield-corporate-bond-ucits-etf"
-              }
-            ]
+            "one_week": "ND",
+            "one_month": "ND",
+            "ytd": "ND",
+            "one_week_value": null,
+            "one_month_value": null,
+            "ytd_value": null,
+            "sources": []
           },
           {
             "label": "Euro Corp.",
             "instrument": "iShares Core € Corp Bond UCITS ETF",
-            "one_week": "-0,20%",
-            "one_month": "-0,95%",
-            "ytd": "+0,25%",
-            "one_week_value": -0.2,
-            "one_month_value": -0.95,
-            "ytd_value": 0.25,
-            "sources": [
-              {
-                "name": "Prospetto Market Monitor fornito dall'utente",
-                "url": "/assets/market-monitor-2026-07-24.png"
-              },
-              {
-                "name": "Strumento o proxy: iShares Core € Corp Bond UCITS ETF",
-                "url": "https://www.ishares.com/it/investitore-privato/it/prodotti/251726/ishares-euro-corporate-bond-ucits-etf"
-              }
-            ]
+            "one_week": "ND",
+            "one_month": "ND",
+            "ytd": "ND",
+            "one_week_value": null,
+            "one_month_value": null,
+            "ytd_value": null,
+            "sources": []
           },
           {
             "label": "Usd HY",
             "instrument": "ETF HYG",
-            "one_week": "-0,72%",
-            "one_month": "-0,28%",
-            "ytd": "+0,99%",
-            "one_week_value": -0.72,
-            "one_month_value": -0.28,
-            "ytd_value": 0.99,
-            "sources": [
-              {
-                "name": "Prospetto Market Monitor fornito dall'utente",
-                "url": "/assets/market-monitor-2026-07-24.png"
-              },
-              {
-                "name": "Strumento o proxy: ETF HYG",
-                "url": "https://www.google.com/finance/quote/HYG:NYSEARCA"
-              }
-            ]
+            "one_week": "ND",
+            "one_month": "ND",
+            "ytd": "ND",
+            "one_week_value": null,
+            "one_month_value": null,
+            "ytd_value": null,
+            "sources": []
           },
           {
             "label": "Debito EM",
             "instrument": "iShares EM Local Govt Bond UCITS ETF",
-            "one_week": "-0,52%",
-            "one_month": "+0,08%",
-            "ytd": "+0,82%",
-            "one_week_value": -0.52,
-            "one_month_value": 0.08,
-            "ytd_value": 0.82,
-            "sources": [
-              {
-                "name": "Prospetto Market Monitor fornito dall'utente",
-                "url": "/assets/market-monitor-2026-07-24.png"
-              },
-              {
-                "name": "Strumento o proxy: iShares EM Local Govt Bond UCITS ETF",
-                "url": "https://www.ishares.com/it/investitore-privato/it/prodotti/251724/ishares-emerging-markets-local-government-bond-ucits-etf"
-              }
-            ]
+            "one_week": "ND",
+            "one_month": "ND",
+            "ytd": "ND",
+            "one_week_value": null,
+            "one_month_value": null,
+            "ytd_value": null,
+            "sources": []
           },
           {
             "label": "Usd Debito EM",
             "instrument": "ETF EMB",
-            "one_week": "-1,18%",
-            "one_month": "-1,58%",
-            "ytd": "+0,52%",
-            "one_week_value": -1.18,
-            "one_month_value": -1.58,
-            "ytd_value": 0.52,
-            "sources": [
-              {
-                "name": "Prospetto Market Monitor fornito dall'utente",
-                "url": "/assets/market-monitor-2026-07-24.png"
-              },
-              {
-                "name": "Strumento o proxy: ETF EMB",
-                "url": "https://www.google.com/finance/quote/EMB:NASDAQ"
-              }
-            ]
+            "one_week": "ND",
+            "one_month": "ND",
+            "ytd": "ND",
+            "one_week_value": null,
+            "one_month_value": null,
+            "ytd_value": null,
+            "sources": []
           }
         ]
       },
@@ -948,42 +745,24 @@
           {
             "label": "Oro",
             "instrument": "ETF GLD",
-            "one_week": "+0,88%",
-            "one_month": "+1,34%",
-            "ytd": "-6,32%",
-            "one_week_value": 0.88,
-            "one_month_value": 1.34,
-            "ytd_value": -6.32,
-            "sources": [
-              {
-                "name": "Prospetto Market Monitor fornito dall'utente",
-                "url": "/assets/market-monitor-2026-07-24.png"
-              },
-              {
-                "name": "Strumento o proxy: ETF GLD",
-                "url": "https://www.google.com/finance/quote/GLD:NYSEARCA"
-              }
-            ]
+            "one_week": "ND",
+            "one_month": "ND",
+            "ytd": "ND",
+            "one_week_value": null,
+            "one_month_value": null,
+            "ytd_value": null,
+            "sources": []
           },
           {
             "label": "Petrolio",
             "instrument": "ETF Brent BNO",
-            "one_week": "+10,56%",
-            "one_month": "+28,62%",
-            "ytd": "+58,62%",
-            "one_week_value": 10.56,
-            "one_month_value": 28.62,
-            "ytd_value": 58.62,
-            "sources": [
-              {
-                "name": "Prospetto Market Monitor fornito dall'utente",
-                "url": "/assets/market-monitor-2026-07-24.png"
-              },
-              {
-                "name": "Strumento o proxy: ETF Brent BNO",
-                "url": "https://www.google.com/finance/quote/BNO:NYSEARCA"
-              }
-            ]
+            "one_week": "ND",
+            "one_month": "ND",
+            "ytd": "ND",
+            "one_week_value": null,
+            "one_month_value": null,
+            "ytd_value": null,
+            "sources": []
           }
         ]
       },
@@ -993,22 +772,13 @@
           {
             "label": "Bitcoin",
             "instrument": "BTC/USD",
-            "one_week": "+0,31%",
-            "one_month": "+5,09%",
-            "ytd": "-26,75%",
-            "one_week_value": 0.31,
-            "one_month_value": 5.09,
-            "ytd_value": -26.75,
-            "sources": [
-              {
-                "name": "Prospetto Market Monitor fornito dall'utente",
-                "url": "/assets/market-monitor-2026-07-24.png"
-              },
-              {
-                "name": "Strumento o proxy: BTC/USD",
-                "url": "https://www.google.com/finance/quote/BTC-USD"
-              }
-            ]
+            "one_week": "ND",
+            "one_month": "ND",
+            "ytd": "ND",
+            "one_week_value": null,
+            "one_month_value": null,
+            "ytd_value": null,
+            "sources": []
           }
         ]
       },
@@ -1018,42 +788,24 @@
           {
             "label": "Eur/Usd",
             "instrument": "EUR/USD",
-            "one_week": "-0,59%",
-            "one_month": "+0,12%",
-            "ytd": "-3,23%",
-            "one_week_value": -0.59,
-            "one_month_value": 0.12,
-            "ytd_value": -3.23,
-            "sources": [
-              {
-                "name": "Prospetto Market Monitor fornito dall'utente",
-                "url": "/assets/market-monitor-2026-07-24.png"
-              },
-              {
-                "name": "Strumento o proxy: EUR/USD",
-                "url": "https://www.google.com/finance/quote/EUR-USD"
-              }
-            ]
+            "one_week": "ND",
+            "one_month": "ND",
+            "ytd": "ND",
+            "one_week_value": null,
+            "one_month_value": null,
+            "ytd_value": null,
+            "sources": []
           },
           {
             "label": "Dollar Index",
             "instrument": "ETF UUP come proxy DXY",
-            "one_week": "+0,67%",
-            "one_month": "-0,18%",
-            "ytd": "+3,21%",
-            "one_week_value": 0.67,
-            "one_month_value": -0.18,
-            "ytd_value": 3.21,
-            "sources": [
-              {
-                "name": "Prospetto Market Monitor fornito dall'utente",
-                "url": "/assets/market-monitor-2026-07-24.png"
-              },
-              {
-                "name": "Strumento o proxy: ETF UUP come proxy DXY",
-                "url": "https://www.google.com/finance/quote/UUP:NYSEARCA"
-              }
-            ]
+            "one_week": "ND",
+            "one_month": "ND",
+            "ytd": "ND",
+            "one_week_value": null,
+            "one_month_value": null,
+            "ytd_value": null,
+            "sources": []
           }
         ]
       }
@@ -1302,5 +1054,5 @@
       }
     ]
   },
-  "methodology": "Dati verificati il 29 luglio 2026. Wall Street è riferita allo snapshot Reuters delle 11:39 ET; lo STOXX 600 alla chiusura europea; i rendimenti sono quelli riportati dal Wall Street Journal prima del FOMC; Bitcoin è il prezzo corrente della fonte indicata. Il breadth_score, la probabilità complementare di tassi invariati e i livelli del Trading Focus sono elaborazioni editoriali basate sui dati sottostanti. Il Market Monitor usa la settimana conclusa il 24 luglio 2026 e, per questa prima integrazione, importa i valori dal prospetto fornito dall'utente associandoli a proxy dichiarati. Non costituisce una raccomandazione finanziaria."
+  "methodology": "Dati verificati il 29 luglio 2026. Wall Street è riferita allo snapshot Reuters delle 11:39 ET; lo STOXX 600 alla chiusura europea; i rendimenti sono quelli riportati dal Wall Street Journal prima del FOMC; Bitcoin è il prezzo corrente della fonte indicata. Il breadth_score, la probabilità complementare di tassi invariati e i livelli del Trading Focus sono elaborazioni editoriali basate sui dati sottostanti. Il Market Monitor utilizza esclusivamente fonti pubbliche attendibili e verificabili; il prospetto grafico fornito dall'utente è soltanto un riferimento visivo. I valori non verificabili sono indicati come ND. Non costituisce una raccomandazione finanziaria."
 }

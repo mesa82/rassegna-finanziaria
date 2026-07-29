@@ -8,7 +8,8 @@ const links=arr=>(arr||[]).map(s=>{
 const printSources=arr=>(arr&&arr.length)?`<div class="sources">Fonte: ${links(arr)}</div>`:'';
 const lis=arr=>(arr||[]).map(x=>`<li>${esc(x)}</li>`).join('');
 const heatClass=value=>{
-  const v=Number(value||0);
+  if(value===null||value===undefined||value==='')return 'heat-nd';
+  const v=Number(value);
   if(v>=5)return 'heat-pos-3'; if(v>=1)return 'heat-pos-2'; if(v>0.15)return 'heat-pos-1';
   if(v<=-5)return 'heat-neg-3'; if(v<=-1)return 'heat-neg-2'; if(v<-0.15)return 'heat-neg-1';
   return 'heat-flat';

@@ -59,10 +59,32 @@ function parseEdition(){
   if(!edition.market_monitor || !Array.isArray(edition.market_monitor.sections)){
     throw new Error('market_monitor incompleto.');
   }
-  requireSources(edition.market_monitor.sources, 'Market Monitor settimanale');
+  if(!Array.isArray(edition.market_monitor.sources)){
+    throw new Error('market_monitor.sources deve essere un array.');
+  }
+  const isNd = value => String(value ?? '').trim().toUpperCase() === 'ND';
+  const validateMonitorValue = (row,textKey,numericKey,label) => {
+    if(isNd(row[textKey])){
+      if(row[numericKey] !== null) throw new Error(`${label}: con ND, ${numericKey} deve essere null.`);
+      return false;
+    }
+    if(typeof row[numericKey] !== 'number' || !Number.isFinite(row[numericKey])){
+      throw new Error(`${label}: ${numericKey} deve essere numerico oppure null con valore ND.`);
+    }
+    return true;
+  };
   edition.market_monitor.sections.forEach((section,si)=>{
     if(!Array.isArray(section.rows)) throw new Error(`market_monitor.sections[${si}].rows deve essere un array.`);
-    section.rows.forEach((row,ri)=>requireSources(row.sources, `market_monitor.sections[${si}].rows[${ri}]`));
+    section.rows.forEach((row,ri)=>{
+      const label=`market_monitor.sections[${si}].rows[${ri}]`;
+      const hasData=[
+        validateMonitorValue(row,'one_week','one_week_value',`${label}.one_week`),
+        validateMonitorValue(row,'one_month','one_month_value',`${label}.one_month`),
+        validateMonitorValue(row,'ytd','ytd_value',`${label}.ytd`)
+      ].some(Boolean);
+      if(!Array.isArray(row.sources)) throw new Error(`${label}.sources deve essere un array.`);
+      if(hasData) requireSources(row.sources,label);
+    });
   });
   requireSources(edition.trading_focus.sources, 'livelli operativi e Trading Focus');
 

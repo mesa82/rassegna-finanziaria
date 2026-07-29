@@ -164,3 +164,5 @@ td:first-child{font-family:Georgia,"Times New Roman",serif;font-size:9.5pt}
 .heat-neg-1{background:#efb57b;color:#5a2910}.heat-neg-2{background:#e98774;color:#5a1611}
 .heat-neg-3{background:#d95a57;color:#fff}
 @media print{.monitor-print-grid{grid-template-columns:1fr 1fr}}
+
+.heat-nd{background:#ece8df;color:#6f7782;font-weight:700}

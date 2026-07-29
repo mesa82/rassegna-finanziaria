@@ -15,7 +15,8 @@ const spark = values => {
 };
 const list = arr => (arr || []).map(x => `<li>${esc(x)}</li>`).join('');
 const heatClass = value => {
-  const v = Number(value || 0);
+  if(value === null || value === undefined || value === '') return 'heat-nd';
+  const v = Number(value);
   if(v >= 5) return 'heat-pos-3';
   if(v >= 1) return 'heat-pos-2';
   if(v > 0.15) return 'heat-pos-1';
@@ -127,7 +128,7 @@ function render(d){
 
   <section id="earnings" class="section">
     <div class="section-head"><div><div class="eyebrow">06 · Earnings Watch</div><h2>Trimestrali e guidance da monitorare</h2></div></div>
-    <div class="earnings-grid">${(d.earnings||[]).map(e=>`<article class="card earning"><div><div class="ticker-symbol">${esc(e.ticker)} <small style="font-family:Arial;font-size:11px">${esc(e.company)}</small></div><div class="source">${esc(e.status)} · ${sourceLinks(e.sources)}</div></div><div><div class="move ${cls(e.direction)}">${esc(e.headline_value)}</div><p style="font-size:10px">${esc(e.summary)}</p></div></article>`).join('')}</div>
+    <div class="earnings-grid">${(d.earnings||[]).map(e=>`<article class="card earning"><div><div class="ticker-symbol">${esc(e.ticker)} <small style="font-family:Arial;font-size:15px">${esc(e.company)}</small></div><div class="source">${esc(e.status)} · ${sourceLinks(e.sources)}</div></div><div><div class="move ${cls(e.direction)}">${esc(e.headline_value)}</div><p style="font-size:15px;line-height:1.55">${esc(e.summary)}</p></div></article>`).join('')}</div>
     <div class="appointments"><b style="color:var(--amber);letter-spacing:.15em;margin-right:20px">PROSSIMI APPUNTAMENTI</b>${(d.appointments||[]).map(esc).join(' · ')}${sourceLine(d.appointments_sources)}</div>
   </section>
 

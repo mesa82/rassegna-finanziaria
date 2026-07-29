@@ -126,3 +126,32 @@ Regole:
 
 Per la prima integrazione i valori al 24/07/2026 sono stati importati dal prospetto
 fornito dall'utente, salvato come `/public/assets/market-monitor-2026-07-24.png`.
+
+
+## Correzione V7.1
+
+Corretto il validatore server in `worker.js`.
+
+`market_monitor` è un oggetto con la proprietà `sections`, non un array.
+La V7 lo classificava erroneamente tra le sezioni top-level che devono essere array,
+generando l'errore:
+
+`market_monitor deve essere un array.`
+
+Il JSON V7 già prodotto resta valido e non deve essere modificato.
+
+## Leggibilità — V7.2
+
+La V7.2 aumenta il testo ordinario della dashboard nell'intervallo 15–20 px.
+Nel Weekly Market Monitor, valori, nomi degli strumenti e descrizioni dei proxy
+sono tutti impostati a 15 px. La versione PDF conserva la precedente impaginazione A4.
+
+
+## Correzione fonti Market Monitor — V7.3
+
+- Il prospetto grafico fornito dall'utente è soltanto un riferimento di layout.
+- Il file immagine non è più incluso né citato come fonte dati.
+- Ogni valore numerico 1W, 1M e YTD richiede fonti specifiche e verificabili.
+- Se un valore non è verificabile, il testo deve essere `ND` e il campo numerico `null`.
+- Le righe interamente `ND` possono avere `sources: []`.
+- Le celle `ND` sono visualizzate con uno stile neutro distinto dallo zero.
