@@ -59,7 +59,6 @@ function validateEdition(edition) {
     "catalysts",
     "indices",
     "intermarket",
-    "market_monitor",
     "earnings",
     "appointments",
     "key_movers",
